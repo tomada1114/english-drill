@@ -1,0 +1,362 @@
+{
+  "id": "2026-10-20",
+  "kind": "morning",
+  "set_hash": "8753f117cbf83757d7a2be093752f3a11d6fa342c7576d3f47ee190fecdcfc8e",
+  "notes": [
+    {
+      "tag": "文法",
+      "title": "過去の話で時制が現在に戻る",
+      "rule": "過去の出来事を話しはじめたら、最後まで was / were / took の過去形で通す",
+      "why": [
+        "日本語は「昨日駅に行った。人が**多い**。」のように、過去の話の途中で現在形に戻っても自然に聞こえる",
+        "英語は動詞の形がそのまま「いつの話か」を示す。途中で現在形に戻すと「今もそうなの？」と聞こえる",
+        "there is / be 動詞のような描写の文も、話の時点に合わせて過去形にそろえる"
+      ],
+      "examples": [
+        {
+          "bad": "There are many people in the train."
+        },
+        {
+          "good": "There were many people on the train."
+        },
+        {
+          "bad": "I totally understood what the boss means."
+        },
+        {
+          "good": "I totally understood what my boss meant."
+        }
+      ]
+    },
+    {
+      "tag": "文法",
+      "title": "more を文末に置く",
+      "rule": "「もっと〜」の more は、比べる形容詞・副詞のすぐ前に置く（more tired / more often）",
+      "why": [
+        "日本語の「もっと」は後から足せるので、英語でも文の最後に more を付けがち",
+        "英語の more は、どの語の程度が上がるかをその語の直前で示す",
+        "動詞そのものの量なら文末でよい（I want to sleep **more**.）。形容詞・副詞の程度は前に置く"
+      ],
+      "examples": [
+        {
+          "bad": "I often feel tired more."
+        },
+        {
+          "good": "I often feel more tired."
+        },
+        {
+          "good": "I want to sleep more."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "数えない名詞",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "The city's website has ___ about the new bus routes in Fort Collins.",
+      "options": [
+        {
+          "t": "some useful informations",
+          "why": "information は数えないので -s は付きません。"
+        },
+        {
+          "t": "a useful information",
+          "why": "information に a は付きません。1 つなら a piece of information。"
+        },
+        {
+          "t": "some useful information",
+          "ok": true
+        },
+        {
+          "t": "many useful informations",
+          "why": "many は数える名詞用。information には使いません。"
+        }
+      ],
+      "explain": "information も feedback・advice と同じ数えない名詞。量は some / a lot of ＋ そのままの形。",
+      "review": true
+    },
+    {
+      "id": "q02",
+      "label": "こう言うのが自然",
+      "scene": "IELTS",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Does reading a paper book before bed help ___ asleep faster?",
+      "options": [
+        {
+          "t": "you falling",
+          "why": "help のあとは 人＋動詞の原形。-ing にはしません。"
+        },
+        {
+          "t": "to you fall",
+          "why": "help は「人」を直接とります。to は要りません。"
+        },
+        {
+          "t": "you fall",
+          "ok": true
+        },
+        {
+          "t": "you for falling",
+          "why": "help 人 for ～ing の形はありません。"
+        }
+      ],
+      "explain": "「〜するのに役立つ」は help 人 ＋ 動詞の原形（help you fall asleep）。",
+      "review": false
+    },
+    {
+      "id": "q03",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "仕事",
+      "form": "spot",
+      "ask": "不自然な部分は？",
+      "stem": "Next Friday, I'll implement a short presentation for the new team members.",
+      "options": [
+        {
+          "t": "Next Friday",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "I'll implement",
+          "ok": true
+        },
+        {
+          "t": "a short presentation",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "for the new team members",
+          "why": "ここは自然です。"
+        }
+      ],
+      "explain": "発表は give a presentation（do / make a presentation も使われます）。implement は仕組みや計画を「実装・実行する」で、発表には使いません。",
+      "review": true
+    },
+    {
+      "id": "q04",
+      "label": "否定文の「〜も」",
+      "scene": "生活",
+      "form": "spot",
+      "ask": "直すべき部分は？",
+      "stem": "My friend hasn't tried the new ramen place downtown, and I haven't tried it neither.",
+      "options": [
+        {
+          "t": "hasn't tried",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "the new ramen place downtown",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "and I haven't tried it",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "neither",
+          "ok": true
+        }
+      ],
+      "explain": "not がある文の「〜も」は文末の either（I haven't tried it, either）。neither はそれ自体が否定なので not と重ねません。neither を使うなら … and neither have I。",
+      "review": true
+    },
+    {
+      "id": "q05",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "___, back up your files. Then install the update and restart your laptop.",
+      "options": [
+        {
+          "t": "First",
+          "ok": true
+        },
+        {
+          "t": "At first",
+          "why": "at first は「最初のうちは（あとで変わった）」。手順の「まず」ではありません。"
+        },
+        {
+          "t": "In first",
+          "why": "この形はありません。"
+        },
+        {
+          "t": "On first",
+          "why": "この形はありません。"
+        }
+      ],
+      "explain": "手順の「まず」は First（Then … と続く）。at first は At first I didn't like it, but … のように、あとで変わる話で使います。",
+      "review": true
+    },
+    {
+      "id": "q06",
+      "label": "こう言うのが自然",
+      "scene": "IELTS",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I think everyone should learn to cook, ___ they live alone or with their family.",
+      "options": [
+        {
+          "t": "whichever",
+          "why": "whichever は「どちらの〜でも」（whichever you choose）。後ろに文＋ or … とは続けません。"
+        },
+        {
+          "t": "either",
+          "why": "either A or B の形なら使えますが、後ろに「主語＋動詞」は続けられません。"
+        },
+        {
+          "t": "whether",
+          "ok": true
+        },
+        {
+          "t": "no matter",
+          "why": "no matter のあとに直接 文 ＋ or … は続きません（no matter whether … なら可）。"
+        }
+      ],
+      "explain": "「〜でも…でも（関係なく）」は whether A or B。前回の whether … or not と同じ形です。",
+      "review": true
+    },
+    {
+      "id": "q07",
+      "label": "こう言うのが自然",
+      "scene": "ニュース",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（ネットのレビューは、いつも正確とは限らない）",
+      "options": [
+        {
+          "t": "Online reviews might not always be accurate.",
+          "ok": true
+        },
+        {
+          "t": "Online reviews might always not be accurate.",
+          "why": "always not は「いつも正確でない」に近く、「いつも〜とは限らない」になりません。"
+        },
+        {
+          "t": "Online reviews might not always accurate.",
+          "why": "accurate は形容詞なので be が要ります（might not always be accurate）。"
+        },
+        {
+          "t": "Online reviews not might always be accurate.",
+          "why": "not は might の後ろに置きます。"
+        }
+      ],
+      "explain": "助動詞があるときは 助動詞 ＋ not ＋ always ＋ be の順。「いつも〜とは限らない」は not always。",
+      "review": false
+    },
+    {
+      "id": "q08",
+      "label": "過去の話の時制",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Last Saturday, I went to a tech meetup in Denver. There ___ about fifty engineers, and most of them worked on AI tools.",
+      "options": [
+        {
+          "t": "were",
+          "ok": true
+        },
+        {
+          "t": "are",
+          "why": "先週の話なので過去形。are だと今もそこにいるように聞こえます。"
+        },
+        {
+          "t": "have been",
+          "why": "現在完了は「今までに」。終わった先週の出来事には使いません。"
+        },
+        {
+          "t": "had been",
+          "why": "過去完了は「その時より前」。ここは meetup に行ったのと同じ時点です。"
+        }
+      ],
+      "explain": "過去の出来事を話しはじめたら、描写の there is も過去形の there were にそろえます。",
+      "review": false
+    },
+    {
+      "id": "q09",
+      "label": "more の位置",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Since I started biking to work, I feel ___ in the morning.",
+      "options": [
+        {
+          "t": "energetic more",
+          "why": "more は形容詞の前に置きます。文末に足しません。"
+        },
+        {
+          "t": "more energeticer",
+          "why": "more と -er は重ねません。長い形容詞は more だけ。"
+        },
+        {
+          "t": "much energetic",
+          "why": "much は比較級を強める語（much more energetic）。単独で形容詞の前には置きません。"
+        },
+        {
+          "t": "more energetic",
+          "ok": true
+        }
+      ],
+      "explain": "「もっと元気」は more energetic。more は比べる形容詞のすぐ前。",
+      "review": false
+    },
+    {
+      "id": "q10",
+      "label": "過去の話の時制",
+      "scene": "IELTS",
+      "form": "spot",
+      "ask": "直すべき部分は？",
+      "stem": "When I was a child, my family lives in a small town near the sea.",
+      "options": [
+        {
+          "t": "When I was a child",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "my family lives",
+          "ok": true
+        },
+        {
+          "t": "in a small town",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "near the sea",
+          "why": "ここは自然です。"
+        }
+      ],
+      "explain": "子どもの頃の話なので my family lived。When I was … で過去の話を始めたら、後ろも過去形でそろえます。",
+      "review": false
+    },
+    {
+      "id": "q11",
+      "label": "more の位置",
+      "scene": "ニュース",
+      "form": "spot",
+      "ask": "直すべき部分は？",
+      "stem": "Because of higher costs, food prices are rising quickly more this year than last year.",
+      "options": [
+        {
+          "t": "Because of higher costs",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "food prices are rising",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "quickly more",
+          "ok": true
+        },
+        {
+          "t": "this year than last year",
+          "why": "ここは自然です。"
+        }
+      ],
+      "explain": "副詞でも同じで、more は quickly の前に置いて more quickly。「もっと速く」の「もっと」を最後に足さない。",
+      "review": false
+    }
+  ]
+}

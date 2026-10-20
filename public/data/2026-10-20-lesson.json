@@ -1,0 +1,908 @@
+{
+  "id": "2026-10-20-lesson",
+  "kind": "lesson",
+  "set_hash": "afab47275d97e64b4db1f319e388b192f1e6b12dec7781f0792fa3275e2ec641",
+  "notes": [
+    {
+      "tag": "文法",
+      "title": "「〜かどうか」「何が〜か」の語順",
+      "rule": "if / whether / what などで始まる名詞節の中は、疑問文の語順にせず主語＋動詞にする",
+      "why": [
+        "日本語は「〜かどうか」と文末で言うだけで語順が変わらない",
+        "英語は疑問文の語順が独立した質問のときだけの形",
+        "節になったら普通の文と同じ主語＋動詞に戻す"
+      ],
+      "examples": [
+        {
+          "bad": "I'm not sure is it correct or not."
+        },
+        {
+          "good": "I'm not sure **if it's** correct or not."
+        },
+        {
+          "good": "I don't know **what it's called** in English."
+        }
+      ]
+    },
+    {
+      "tag": "構造",
+      "title": "名詞のあとに what 節を直接つなげない",
+      "rule": "名詞のあとに what 節を置くときは of でつなぐ。または a list of things to do と名詞にする",
+      "why": [
+        "日本語は「やることのリスト」と名詞を直接つなげる",
+        "英語は名詞と節の間に of のようなつなぎが要る",
+        "a list of things to do のように名詞で言い換えると言いやすい"
+      ],
+      "examples": [
+        {
+          "bad": "I make a to-do list what to do today."
+        },
+        {
+          "good": "I make a list **of** what to do today."
+        },
+        {
+          "good": "I make a list **of things** to do today."
+        }
+      ]
+    },
+    {
+      "tag": "文法",
+      "title": "and で並べる形をそろえる",
+      "rule": "and の前後は同じ形にする。-ing と -ing、原形と原形",
+      "why": [
+        "日本語は「始めて、続けて」と動詞の形が自然にそろう",
+        "英語は前置詞（after）のあとが -ing なので、and の後ろも -ing",
+        "途中で形が変わると、何と何を並べたのかが分からなくなる"
+      ],
+      "examples": [
+        {
+          "bad": "after just starting and keep going"
+        },
+        {
+          "good": "after just starting and **keeping** going"
+        },
+        {
+          "good": "I like to start early and **keep** going."
+        }
+      ]
+    },
+    {
+      "tag": "構造",
+      "title": "even / even though / despite の使い分け",
+      "rule": "節をつなぐのは even though / although。even は直後の語句を強めるだけ。despite のあとは名詞。仮定は even if。「それでも」は even so",
+      "why": [
+        "even 単独は「〜でさえ」で、直後の語句を強める（Even in this situation / didn't even say hello）。節と節はつなげない",
+        "even though / although ＋節は事実を認めて「〜なのに」。even if ＋節は仮定の「たとえ〜でも」",
+        "despite / in spite of のあとは名詞（節は続けない）。文頭で単独の「それでも」は even so / still / nevertheless"
+      ],
+      "examples": [
+        {
+          "bad": "Even I was tired, I kept working."
+        },
+        {
+          "good": "**Even though** I was tired, I kept working."
+        },
+        {
+          "good": "**Despite** the rain, we went for a walk."
+        },
+        {
+          "good": "I'll run tomorrow **even if** it rains."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "After the meeting, I had so many tabs open that I ___ what to do next.",
+      "options": [
+        {
+          "t": "lost",
+          "why": "lose は物を失くすときの語で、「分からなくなる」は lose track of と組で言います。"
+        },
+        {
+          "t": "lost track of",
+          "ok": true
+        },
+        {
+          "t": "missed track of",
+          "why": "miss track とは言いません。lose track of です。"
+        },
+        {
+          "t": "lost the track of",
+          "why": "track に the は付けません。lose track of の形で覚えます。"
+        }
+      ],
+      "explain": "「何をしているか分からなくなる」は lose track of。lose だけだと物をなくした意味になります。",
+      "review": false
+    },
+    {
+      "id": "q02",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（この時間割は、時間を効率よく使うのに役立つ）",
+      "options": [
+        {
+          "t": "This schedule can arrange my time efficiently.",
+          "why": "arrange は「並べる・手配する」。時間を上手に使う意味にはなりません。"
+        },
+        {
+          "t": "This schedule helps to my time efficiently.",
+          "why": "help のあとに to＋名詞は続きません。help me ＋動詞の形です。"
+        },
+        {
+          "t": "This schedule makes my time efficiently.",
+          "why": "make のあとに名詞＋副詞だけでは文になりません。"
+        },
+        {
+          "t": "This schedule helps me use my time efficiently.",
+          "ok": true
+        }
+      ],
+      "explain": "物事が主語で「〜するのに役立つ」は helps me ＋動詞。can は付けません。",
+      "review": false
+    },
+    {
+      "id": "q03",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Wait, I ___ my mouse pointer. Where did it go?",
+      "options": [
+        {
+          "t": "lost",
+          "ok": true
+        },
+        {
+          "t": "was lost",
+          "why": "後ろに my mouse pointer が続くので、受け身の was lost にはなりません。"
+        },
+        {
+          "t": "got lost",
+          "why": "get lost は「道に迷う」。後ろに目的語は続きません。"
+        },
+        {
+          "t": "am lost",
+          "why": "be lost も「迷っている」で、目的語は続きません。"
+        }
+      ],
+      "explain": "自分の物が見つからないときは I lost ＋物。主語を物にして was lost とは言いません。",
+      "review": false
+    },
+    {
+      "id": "q04",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I [[did a mistake]] in the monthly report, so I sent a corrected version.",
+      "options": [
+        {
+          "t": "did a mistake",
+          "why": "mistake は do ではなく make と組みます。"
+        },
+        {
+          "t": "took a mistake",
+          "why": "take は mistake と組みません。"
+        },
+        {
+          "t": "made a mistake",
+          "ok": true
+        },
+        {
+          "t": "put a mistake",
+          "why": "put a mistake とは言いません。"
+        }
+      ],
+      "explain": "mistake は make a mistake。do / take では言いません。",
+      "review": true
+    },
+    {
+      "id": "q05",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Before the demo, I'd like to ___ a quick sound check.",
+      "options": [
+        {
+          "t": "make",
+          "why": "sound check は make と組みません。do a check と覚えます。"
+        },
+        {
+          "t": "do",
+          "ok": true
+        },
+        {
+          "t": "take",
+          "why": "take a check とは言いません。"
+        },
+        {
+          "t": "give",
+          "why": "give a check とは言いません。"
+        }
+      ],
+      "explain": "check は do a check / run a check。make は使いません。",
+      "review": true
+    },
+    {
+      "id": "q06",
+      "label": "語と前置詞の組み合わせ",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "What we eat for dinner depends ___ how much time we have.",
+      "options": [
+        {
+          "t": "of",
+          "why": "depend は of ではなく on と組みます。"
+        },
+        {
+          "t": "from",
+          "why": "depend from とは言いません。"
+        },
+        {
+          "t": "to",
+          "why": "depend to とは言いません。"
+        },
+        {
+          "t": "on",
+          "ok": true
+        }
+      ],
+      "explain": "depend on 〜。「〜次第」は on で覚えます。",
+      "review": true
+    },
+    {
+      "id": "q07",
+      "label": "語と前置詞の組み合わせ",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "We [[arrived to the office]] at nine and started the stand-up right away.",
+      "options": [
+        {
+          "t": "arrived at the office",
+          "ok": true
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "arrive は to ではなく at（大きな場所なら in）と組みます。"
+        },
+        {
+          "t": "reached to the office",
+          "why": "reach のあとに to は付けません。reach the office です。"
+        },
+        {
+          "t": "arrived the office",
+          "why": "arrive は自動詞なので、前置詞なしで目的語は取れません。"
+        }
+      ],
+      "explain": "到着は arrive at 〜。reach なら前置詞なしで reach the office。",
+      "review": true
+    },
+    {
+      "id": "q08",
+      "label": "過去の話の時制",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Last week my laptop crashed during a demo. Everyone was waiting, so I [[panic]] for a moment.",
+      "options": [
+        {
+          "t": "panic",
+          "why": "過去の話の途中で現在形に戻っています。"
+        },
+        {
+          "t": "am panicking",
+          "why": "過去の出来事なので現在進行形は使えません。"
+        },
+        {
+          "t": "panicked",
+          "ok": true
+        },
+        {
+          "t": "have panicked",
+          "why": "last week のような過去の時点とは現在完了を使えません。"
+        }
+      ],
+      "explain": "過去の話は最後まで過去形で通す。panicked。",
+      "review": true
+    },
+    {
+      "id": "q09",
+      "label": "過去の話の時制",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "When I first moved to Colorado, I ___ nobody here, so I felt a little lonely.",
+      "options": [
+        {
+          "t": "know",
+          "why": "過去の話なので know は現在形のままです。"
+        },
+        {
+          "t": "knew",
+          "ok": true
+        },
+        {
+          "t": "am knowing",
+          "why": "know は進行形にしません。"
+        },
+        {
+          "t": "have known",
+          "why": "when I first moved のような過去の時点とは現在完了を使えません。"
+        }
+      ],
+      "explain": "過去の場面の状態は knew。",
+      "review": true
+    },
+    {
+      "id": "q10",
+      "label": "although と but の重ね",
+      "scene": "学習",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Although the app is simple, [[but it]] saves me an hour a day.",
+      "options": [
+        {
+          "t": "and it",
+          "why": "although で始めたら、後ろは and でつなぎません。"
+        },
+        {
+          "t": "so it",
+          "why": "so は結果を表すので意味が合いません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "although と but を重ねています。どちらか一方だけにします。"
+        },
+        {
+          "t": "it",
+          "ok": true
+        }
+      ],
+      "explain": "although のあとの節には but を付けない。Although A, B。",
+      "review": true
+    },
+    {
+      "id": "q11",
+      "label": "否定文の「〜も」",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "My sister doesn't like spicy food, and I don't like it ___.",
+      "options": [
+        {
+          "t": "either",
+          "ok": true
+        },
+        {
+          "t": "too",
+          "why": "否定文の「〜も」は too ではなく either です。"
+        },
+        {
+          "t": "also",
+          "why": "also は否定文の文末に置けません。"
+        },
+        {
+          "t": "neither",
+          "why": "neither 自体が否定語なので、don't と重ねられません。"
+        }
+      ],
+      "explain": "否定文の「〜も」は文末の either。",
+      "review": true
+    },
+    {
+      "id": "q12",
+      "label": "一回できたことの could",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Last night I [[could finish]] the report before dinner, which was a relief.",
+      "options": [
+        {
+          "t": "can finish",
+          "why": "last night の話なので can は使えません。"
+        },
+        {
+          "t": "am able to finish",
+          "why": "過去の出来事に現在形は使えません。"
+        },
+        {
+          "t": "was able to finish",
+          "ok": true
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "その夜に一回できたことは could ではなく was able to / managed to です。"
+        }
+      ],
+      "explain": "一回できたことは was able to / managed to。could は能力の話に使う。",
+      "review": true
+    },
+    {
+      "id": "q13",
+      "label": "数えない名詞",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "The new hire asked me for ___ on how to set up the dev environment.",
+      "options": [
+        {
+          "t": "advices",
+          "why": "advice は数えない名詞なので -s は付けません。"
+        },
+        {
+          "t": "advice",
+          "ok": true
+        },
+        {
+          "t": "an advice",
+          "why": "advice に a は付けません。"
+        },
+        {
+          "t": "many advices",
+          "why": "advice は数えないので many も -s も使えません。"
+        }
+      ],
+      "explain": "advice は数えない名詞。a piece of advice / some advice。",
+      "review": true
+    },
+    {
+      "id": "q14",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "学習",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Let's ___ a short break before the next session.",
+      "options": [
+        {
+          "t": "make",
+          "why": "break は make と組みません。"
+        },
+        {
+          "t": "do",
+          "why": "do a break とは言いません。"
+        },
+        {
+          "t": "put",
+          "why": "put a break とは言いません。"
+        },
+        {
+          "t": "take",
+          "ok": true
+        }
+      ],
+      "explain": "break は take a break。",
+      "review": true
+    },
+    {
+      "id": "q15",
+      "label": "名詞節の語順",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I wonder [[did the package arrive]] at my neighbor's house by mistake.",
+      "options": [
+        {
+          "t": "if the package arrived",
+          "ok": true
+        },
+        {
+          "t": "if did the package arrive",
+          "why": "if のあとは疑問文の語順にしません。"
+        },
+        {
+          "t": "did arrive the package",
+          "why": "どの語順でも、間接の疑問は平叙文の語順です。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "文の中に入った疑問は、did を使った疑問文の語順にしません。"
+        }
+      ],
+      "explain": "「〜かどうか」は if ＋主語＋動詞。疑問文の語順にしない。",
+      "review": false
+    },
+    {
+      "id": "q16",
+      "label": "名詞節の語順",
+      "scene": "ニュース",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Could you tell me where ___?",
+      "options": [
+        {
+          "t": "is the nearest pharmacy",
+          "why": "where のあとは疑問文の語順にしません。"
+        },
+        {
+          "t": "does the nearest pharmacy",
+          "why": "where のあとに does は要りません。"
+        },
+        {
+          "t": "the nearest pharmacy is",
+          "ok": true
+        },
+        {
+          "t": "the nearest pharmacy does",
+          "why": "be 動詞の文なので does は使いません。"
+        }
+      ],
+      "explain": "丁寧な質問の中の where は平叙文の語順。where the pharmacy is。",
+      "review": false
+    },
+    {
+      "id": "q17",
+      "label": "名詞節の語順",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Do you know [[what time the store closes]] on Sundays?",
+      "options": [
+        {
+          "t": "what time does the store close",
+          "why": "Do you know のあとは平叙文の語順にします。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "what time closes the store",
+          "why": "動詞と主語が逆です。"
+        },
+        {
+          "t": "that time the store closes",
+          "why": "「何時」を聞く what time が that time になっています。"
+        }
+      ],
+      "explain": "下線部は正しい。Do you know のあとの what time は主語＋動詞の語順。",
+      "review": false
+    },
+    {
+      "id": "q18",
+      "label": "名詞に what 節をつなぐ",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "My manager gave me [[a list what to fix]] before the release.",
+      "options": [
+        {
+          "t": "a list what to fix",
+          "why": "名詞のあとに what 節を直接置けません。of でつなぎます。"
+        },
+        {
+          "t": "a list that what to fix",
+          "why": "that と what を重ねられません。"
+        },
+        {
+          "t": "a list to what to fix",
+          "why": "to では名詞と what 節がつながりません。"
+        },
+        {
+          "t": "a list of what to fix",
+          "ok": true
+        }
+      ],
+      "explain": "名詞＋what 節は of でつなぐ。a list of what to fix（a list of things to fix でも可）。",
+      "review": false
+    },
+    {
+      "id": "q19",
+      "label": "名詞に what 節をつなぐ",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "She wrote a short note ___ she needed to buy for the trip.",
+      "options": [
+        {
+          "t": "of what",
+          "ok": true
+        },
+        {
+          "t": "what",
+          "why": "名詞のあとに what 節を直接置けません。"
+        },
+        {
+          "t": "that what",
+          "why": "that と what を重ねられません。"
+        },
+        {
+          "t": "at what",
+          "why": "at では名詞と what 節がつながりません。"
+        }
+      ],
+      "explain": "a note of what she needed。名詞と what 節の間は of。",
+      "review": false
+    },
+    {
+      "id": "q20",
+      "label": "名詞に what 節をつなぐ",
+      "scene": "学習",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I keep a [[list of things to do]] on my phone.",
+      "options": [
+        {
+          "t": "list what to do",
+          "why": "名詞のあとに what 節を直接置けません。"
+        },
+        {
+          "t": "list of what do I do",
+          "why": "節の中が疑問文の語順になっています。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "list for to do",
+          "why": "for のあとに to do は続きません。"
+        }
+      ],
+      "explain": "下線部は正しい。名詞（things）で言うなら of でつなぐ。",
+      "review": false
+    },
+    {
+      "id": "q21",
+      "label": "and で並べる形をそろえる",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "My weekend plan is to relax, [[reading]] a book, and go for a walk.",
+      "options": [
+        {
+          "t": "reading",
+          "why": "to relax / read / go と原形でそろえます。"
+        },
+        {
+          "t": "read",
+          "ok": true
+        },
+        {
+          "t": "to reading",
+          "why": "to のあとは原形です。"
+        },
+        {
+          "t": "reads",
+          "why": "主語が plan なので三単現の reads にはなりません。"
+        }
+      ],
+      "explain": "並べる動詞は同じ形に。to relax, read, and go。",
+      "review": false
+    },
+    {
+      "id": "q22",
+      "label": "and で並べる形をそろえる",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "She enjoys cooking at home and ___ new recipes.",
+      "options": [
+        {
+          "t": "try",
+          "why": "enjoy のあとは -ing なので、and の後ろも -ing です。"
+        },
+        {
+          "t": "to try",
+          "why": "enjoy は to 不定詞を取りません。"
+        },
+        {
+          "t": "tried",
+          "why": "enjoys cooking と形がそろいません。"
+        },
+        {
+          "t": "trying",
+          "ok": true
+        }
+      ],
+      "explain": "enjoys cooking and trying。-ing と -ing。",
+      "review": false
+    },
+    {
+      "id": "q23",
+      "label": "and で並べる形をそろえる",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "After [[finishing the draft and sending it]] to my editor, I took a short break.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "finishing the draft and send it",
+          "why": "finishing と send の形がそろいません。"
+        },
+        {
+          "t": "finish the draft and sending it",
+          "why": "after のあとの finish と sending の形がそろいません。"
+        },
+        {
+          "t": "finished the draft and sending it",
+          "why": "finished と sending の形がそろいません。"
+        }
+      ],
+      "explain": "下線部は正しい。after のあとの -ing と -ing がそろっている。",
+      "review": false
+    },
+    {
+      "id": "q24",
+      "label": "even / even though / despite",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "[[Even]] I was tired, I kept working on the report until midnight.",
+      "options": [
+        {
+          "t": "Despite",
+          "why": "despite のあとは名詞です。I was tired という節は続けられません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "even だけでは節と節をつなげません。even though にします。"
+        },
+        {
+          "t": "Even though",
+          "ok": true
+        },
+        {
+          "t": "In spite",
+          "why": "in spite は of ＋名詞の形で、節は続けられません。"
+        }
+      ],
+      "explain": "事実を認めて「〜なのに」と節をつなぐのは even though / although。even 単独は節をつなげない。",
+      "review": false
+    },
+    {
+      "id": "q25",
+      "label": "even / even though / despite",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "[[Despite]] it was raining, we went for a walk along the river.",
+      "options": [
+        {
+          "t": "Even",
+          "why": "even は節をつなげません。"
+        },
+        {
+          "t": "Although",
+          "ok": true
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "despite のあとは名詞です。it was raining という節は続けられません。"
+        },
+        {
+          "t": "In spite",
+          "why": "in spite は of ＋名詞の形で、節は続けられません。"
+        }
+      ],
+      "explain": "despite のあとは名詞。節なら although（even though でも可）。",
+      "review": false
+    },
+    {
+      "id": "q26",
+      "label": "even / even though / despite",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "[[Even if]] I was really tired yesterday, I finished the report on time.",
+      "options": [
+        {
+          "t": "Even",
+          "why": "even は節をつなげません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "昨日の事実なので even if（もしも〜でも）は合いません。even though にします。"
+        },
+        {
+          "t": "Despite",
+          "why": "despite のあとは名詞です。節は続けられません。"
+        },
+        {
+          "t": "Even though",
+          "ok": true
+        }
+      ],
+      "explain": "事実は even though、仮定は even if。",
+      "review": false
+    },
+    {
+      "id": "q27",
+      "label": "even / even though / despite",
+      "scene": "ニュース",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "We went hiking [[despite of the heavy rain]] on Saturday.",
+      "options": [
+        {
+          "t": "despite the heavy rain",
+          "ok": true
+        },
+        {
+          "t": "despite of the heavy rain",
+          "why": "despite のあとに of は付けません。in spite of と混ざっています。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "despite に of は付けません。"
+        },
+        {
+          "t": "although the heavy rain",
+          "why": "although のあとは節で、名詞だけは続けられません。"
+        }
+      ],
+      "explain": "despite ＋名詞（of なし）。in spite of ＋名詞。",
+      "review": false
+    },
+    {
+      "id": "q28",
+      "label": "even / even though / despite",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "[[Even]] in this situation, I try to stay calm and keep my voice low.",
+      "options": [
+        {
+          "t": "Despite",
+          "why": "despite のあとは名詞句です。in this situation という前置詞句は続けられません。"
+        },
+        {
+          "t": "In spite of",
+          "why": "in spite of のあとは名詞です。in this situation という前置詞句は続けられません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "Despite of",
+          "why": "despite に of は付けません。"
+        }
+      ],
+      "explain": "下線部は正しい。even は直後の語句（in this situation）を強調する。",
+      "review": false
+    },
+    {
+      "id": "q29",
+      "label": "even / even though / despite",
+      "scene": "学習",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I studied hard for the test. [[Despite]], I failed it.",
+      "options": [
+        {
+          "t": "Even though",
+          "why": "even though は節を続けるもので、文頭に単独で置けません。"
+        },
+        {
+          "t": "Even so",
+          "ok": true
+        },
+        {
+          "t": "Even if",
+          "why": "even if は節を続けるもので、文頭に単独で置けません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "despite は名詞が続く語で、単独では「それでも」になりません。"
+        }
+      ],
+      "explain": "「それでも」は Even so / Still / Nevertheless。despite は単独で使えない。",
+      "review": false
+    }
+  ]
+}

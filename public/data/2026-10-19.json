@@ -1,0 +1,489 @@
+{
+  "id": "2026-10-19",
+  "kind": "morning",
+  "set_hash": "12d6447c255d2fce3a6ea00c263683d53ac25116687d868ed7054bba6806c448",
+  "notes": [
+    {
+      "tag": "文法",
+      "title": "一回できたことに could を使う",
+      "rule": "その時一回やり遂げたことは was able to / managed to、または過去形で言う",
+      "why": [
+        "日本語の「できた」は「やる力があった」と「実際にやれた」を区別しない",
+        "英語の could は「やる力があった・やろうと思えばできた」のほう。実際にやったかは伝わらない",
+        "否定の couldn't（できなかった）は結果と食い違わないので、そのまま使ってよい"
+      ],
+      "examples": [
+        {
+          "bad": "I could get up early this morning."
+        },
+        {
+          "good": "I was able to get up early this morning."
+        },
+        {
+          "good": "I got up early this morning."
+        }
+      ]
+    },
+    {
+      "tag": "語の組み合わせ",
+      "title": "名詞が動詞と前置詞を選ぶ",
+      "rule": "動詞や前置詞は日本語から訳さず、名詞とセットで覚える",
+      "why": [
+        "日本語は「発表する・昼寝する・睡眠をとる」と、ほぼ「する」「とる」でつなぐ",
+        "英語は名詞ごとに組む動詞が決まっている。日本語の動詞から選ぶと外れる",
+        "前置詞も同じ。「締め切り**に**」の「に」から in を選ぶと外れる"
+      ],
+      "examples": [
+        {
+          "good": "give a presentation"
+        },
+        {
+          "good": "take a nap / get some sleep"
+        },
+        {
+          "good": "on a tight deadline"
+        }
+      ]
+    },
+    {
+      "tag": "文法",
+      "title": "数えない名詞に a や -s を付ける",
+      "rule": "feedback・advice・information は a も -s も付けない。量は some / a lot of",
+      "why": [
+        "これらは 1 個 2 個と区切れない「量」として扱う名詞",
+        "日本語には単数・複数の区別がないので、推測で a や -s を付けてしまう",
+        "どうしても 1 つと言いたいときは a piece of feedback"
+      ],
+      "examples": [
+        {
+          "bad": "I got many feedbacks from clients."
+        },
+        {
+          "good": "I got a lot of feedback from clients."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "一回できたことの could",
+      "scene": "旅行",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "The flight was delayed for three hours, but luckily I ___ catch my connecting flight in Denver.",
+      "options": [
+        {
+          "t": "could",
+          "why": "その時一回できたことには使いません。「乗ろうと思えば乗れた」に聞こえます。"
+        },
+        {
+          "t": "was able to",
+          "ok": true
+        },
+        {
+          "t": "could be able to",
+          "why": "could と be able to はどちらも「できる」。2 つ重ねません。"
+        },
+        {
+          "t": "have could",
+          "why": "could に完了形はありません。"
+        }
+      ],
+      "explain": "実際に乗れた一回の成功なので was able to。managed to や、単に caught でも言えます。",
+      "review": false
+    },
+    {
+      "id": "q02",
+      "label": "一回できたことの could",
+      "scene": "生活",
+      "form": "spot",
+      "ask": "直すべき部分は？",
+      "stem": "I could get up early this morning, so I studied before the lesson.",
+      "options": [
+        {
+          "t": "I could get up",
+          "ok": true
+        },
+        {
+          "t": "early this morning",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "so I studied",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "before the lesson",
+          "why": "ここは自然です。"
+        }
+      ],
+      "explain": "今朝一回早起きできた話なので I was able to get up、または I got up early。",
+      "review": false
+    },
+    {
+      "id": "q03",
+      "label": "一回できたことの could",
+      "scene": "仕事",
+      "form": "choose",
+      "ask": "自然な文は？",
+      "stem": "（2 時間かけて、やっとバグを見つけた）",
+      "options": [
+        {
+          "t": "After two hours, I could finally find the bug.",
+          "why": "一回の成功に could。「見つけようと思えば見つけられた」寄りに聞こえます。"
+        },
+        {
+          "t": "After two hours, I finally found the bug.",
+          "ok": true
+        },
+        {
+          "t": "After two hours, I was finally able find the bug.",
+          "why": "be able のあとは to＋動詞の原形。to が抜けています。"
+        },
+        {
+          "t": "After two hours, I could found the bug finally.",
+          "why": "could のあとは原形の find。"
+        }
+      ],
+      "explain": "単に過去形で言うのがいちばん自然。I was finally able to find the bug でも正解です。",
+      "review": false
+    },
+    {
+      "id": "q04",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I didn't ___ enough sleep last night, so I'm a bit slow today.",
+      "options": [
+        {
+          "t": "get",
+          "ok": true
+        },
+        {
+          "t": "take",
+          "why": "take a sleep とは言いません。take と組むのは nap（昼寝）。"
+        },
+        {
+          "t": "make",
+          "why": "sleep と make は組みません。"
+        },
+        {
+          "t": "do",
+          "why": "sleep と do は組みません。"
+        }
+      ],
+      "explain": "睡眠を「とる」は get (enough / some) sleep。昼寝なら take a nap。",
+      "review": false
+    },
+    {
+      "id": "q05",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I usually ___ a 20-minute nap after lunch.",
+      "options": [
+        {
+          "t": "take",
+          "ok": true
+        },
+        {
+          "t": "make",
+          "why": "nap と make は組みません。"
+        },
+        {
+          "t": "do",
+          "why": "nap と do は組みません。"
+        },
+        {
+          "t": "sleep",
+          "why": "sleep a nap とは言いません。動詞の sleep を使うなら I sleep for 20 minutes。"
+        }
+      ],
+      "explain": "昼寝は take a nap（イギリス英語では have a nap も）。",
+      "review": false
+    },
+    {
+      "id": "q06",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "仕事",
+      "form": "spot",
+      "ask": "不自然な部分は？",
+      "stem": "After I implemented the presentation, my manager gave me some feedback.",
+      "options": [
+        {
+          "t": "implemented",
+          "ok": true
+        },
+        {
+          "t": "the presentation",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "my manager gave me",
+          "why": "ここは自然です。"
+        },
+        {
+          "t": "some feedback",
+          "why": "ここは自然です。feedback に a や -s が付いていないのも正しい形。"
+        }
+      ],
+      "explain": "発表は give a presentation。implement は「仕組みや計画を実装・実行する」で、発表には使いません。",
+      "review": false
+    },
+    {
+      "id": "q07",
+      "label": "数えない名詞",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I got ___ from users after the release.",
+      "options": [
+        {
+          "t": "a lot of feedback",
+          "ok": true
+        },
+        {
+          "t": "many feedbacks",
+          "why": "feedback は数えないので -s も many も付きません。"
+        },
+        {
+          "t": "a lot of feedbacks",
+          "why": "a lot of は合っていますが、feedback に -s は付きません。"
+        },
+        {
+          "t": "a feedback",
+          "why": "feedback に a は付きません。"
+        }
+      ],
+      "explain": "数えない名詞の量は a lot of / some ＋ そのままの形。",
+      "review": false
+    },
+    {
+      "id": "q08",
+      "label": "数えない名詞",
+      "scene": "IELTS",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Some people prefer to ask their friends for ___ before making a big decision.",
+      "options": [
+        {
+          "t": "advice",
+          "ok": true
+        },
+        {
+          "t": "advices",
+          "why": "advice は数えないので -s は付きません。"
+        },
+        {
+          "t": "an advice",
+          "why": "advice に an は付きません。1 つなら a piece of advice。"
+        },
+        {
+          "t": "many advices",
+          "why": "many は数える名詞用。advice には使いません。"
+        }
+      ],
+      "explain": "advice は feedback・information と同じ数えない名詞。ask for advice の形で覚えておくと使えます。",
+      "review": false
+    },
+    {
+      "id": "q09",
+      "label": "語と前置詞の組み合わせ",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "We're ___ a tight deadline, so let's keep the meeting short.",
+      "options": [
+        {
+          "t": "on",
+          "ok": true
+        },
+        {
+          "t": "in",
+          "why": "「締め切り（の中）に」の発想で in を選ぶと外れます。"
+        },
+        {
+          "t": "at",
+          "why": "at a deadline とは言いません。"
+        },
+        {
+          "t": "by",
+          "why": "by は「〜までに」（by Friday）。締め切りに追われている状態には使いません。"
+        }
+      ],
+      "explain": "on a tight deadline で「締め切りが厳しい」。short ではなく tight と組むのもセットで。",
+      "review": false
+    },
+    {
+      "id": "q10",
+      "label": "although と but の重ね",
+      "scene": "IELTS",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（一人暮らしはお金がかかるが、若者を自立させる）",
+      "options": [
+        {
+          "t": "Although living alone is expensive, but it helps young people become independent.",
+          "why": "although と but はどちらも「〜だが」。重ねません。"
+        },
+        {
+          "t": "Although living alone is expensive, it helps young people become independent.",
+          "ok": true
+        },
+        {
+          "t": "Living alone is expensive, although but it helps young people become independent.",
+          "why": "although と but を並べています。"
+        },
+        {
+          "t": "Although living alone is expensive, however it helps young people become independent.",
+          "why": "however も重ねられません。although の文の後ろには何も足さずにつなぎます。"
+        }
+      ],
+      "explain": "although で始めたら後ろはそのまま。but を使うなら Living alone is expensive, but it helps …。",
+      "review": false
+    },
+    {
+      "id": "q11",
+      "label": "否定文の「〜も」",
+      "scene": "会話",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I'm not sure what it's called in English, ___.",
+      "options": [
+        {
+          "t": "either",
+          "ok": true
+        },
+        {
+          "t": "too",
+          "why": "too は肯定文の「〜も」。否定文では either。"
+        },
+        {
+          "t": "also",
+          "why": "also は否定文の「〜も」には使いません。"
+        },
+        {
+          "t": "neither",
+          "why": "neither はそれ自体が否定。not と一緒には使いません（Me neither. の形で使う）。"
+        }
+      ],
+      "explain": "否定文の「〜も」は文末の either。",
+      "review": false
+    },
+    {
+      "id": "q12",
+      "label": "こう言うのが自然",
+      "scene": "会話",
+      "form": "choose",
+      "ask": "相手が週末の話をしてくれた。返すなら？",
+      "stem": "",
+      "options": [
+        {
+          "t": "Thanks for sharing.",
+          "ok": true
+        },
+        {
+          "t": "Thank you for your introduction.",
+          "why": "introduction は自己紹介や人の紹介。話してくれたことへのお礼には使いません。"
+        },
+        {
+          "t": "Thanks for your telling.",
+          "why": "telling は名詞として使いません。"
+        },
+        {
+          "t": "Thank you for explaining me.",
+          "why": "explain は「人に」を直接取りません（explain it to me）。話を聞いたお礼にも合いません。"
+        }
+      ],
+      "explain": "相手が自分の話や考えを話してくれたら Thanks for sharing.。",
+      "review": false
+    },
+    {
+      "id": "q13",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "After work, I'm going to ___ at Costco.",
+      "options": [
+        {
+          "t": "go grocery shopping",
+          "ok": true
+        },
+        {
+          "t": "go to grocery shopping",
+          "why": "go shopping と同じ形で、to は入りません。"
+        },
+        {
+          "t": "go groceries",
+          "why": "groceries は買う物（食料品）。go と直接はつながりません。"
+        },
+        {
+          "t": "do grocery",
+          "why": "do grocery とは言いません（do the groceries は一部の地域だけ）。"
+        }
+      ],
+      "explain": "「買い出しに行く」は go grocery shopping。場所は at Costco で後ろに足します。",
+      "review": false
+    },
+    {
+      "id": "q14",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I'll fix the bug ___ and then write the tests.",
+      "options": [
+        {
+          "t": "first",
+          "ok": true
+        },
+        {
+          "t": "at first",
+          "why": "at first は「最初のうちは（あとで変わった）」。順番の「まず」ではありません。"
+        },
+        {
+          "t": "firstly at",
+          "why": "この形はありません。"
+        },
+        {
+          "t": "in first",
+          "why": "この形はありません。"
+        }
+      ],
+      "explain": "順番の「まず」は first。at first は At first I didn't like it, but … のように、後で変わる話で使います。",
+      "review": false
+    },
+    {
+      "id": "q15",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "We'll ship it on Friday ___ the reviews are good or not.",
+      "options": [
+        {
+          "t": "whether",
+          "ok": true
+        },
+        {
+          "t": "whichever",
+          "why": "whichever は「どちらの〜でも」（whichever you choose）。or not とは組みません。"
+        },
+        {
+          "t": "either",
+          "why": "either A or B の形なら使えますが、後ろに文は続けられません。"
+        },
+        {
+          "t": "if",
+          "why": "if … or not は「〜かどうか（を知りたい）」の意味。「〜に関わらず」にはなりません。"
+        }
+      ],
+      "explain": "「〜かどうかに関わらず」は whether … or not。",
+      "review": false
+    }
+  ]
+}
