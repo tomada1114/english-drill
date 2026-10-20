@@ -112,7 +112,7 @@ window.addEventListener('keydown', e => {
       e.target.closest('input, textarea, select, [contenteditable="true"], summary')) return;
   const key = e.key.toLowerCase();
   if (page === 'notes') {
-    if (['l', 'arrowright'].includes(key) || (key === 'enter' && e.target === main)) { e.preventDefault(); e.stopImmediatePropagation(); document.querySelector('#next').click(); }
+    if (['l', 'arrowright'].includes(key) || (key === 'enter' && (e.target === main || e.target === document.body))) { e.preventDefault(); e.stopImmediatePropagation(); document.querySelector('#next').click(); }
     if (['h', 'arrowleft'].includes(key)) { e.preventDefault(); e.stopImmediatePropagation(); document.querySelector('#prev').click(); }
   } else if (page === 'quiz') {
     const a = answers[data.questions[current].id];
