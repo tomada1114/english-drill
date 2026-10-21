@@ -3,6 +3,7 @@ import { ID, validateSet, choose, restoreAnswers, result, escape, rich, stem } f
 const main = document.querySelector('main');
 const label = kind => kind === 'lesson' ? 'レッスン後' : '受講前';
 const day = id => id.slice(0, 10).replaceAll('-', '.');
+const KEYS = 'HJKL', CHOICE_CODES = ['KeyH', 'KeyJ', 'KeyK', 'KeyL'];
 let data, answers = {}, page = 'notes', current = 0, noteIndex = 0, selected = -1;
 let storageKey, storageAvailable = true;
 
@@ -59,9 +60,9 @@ function quiz() {
   const q = data.questions[current], a = answers[q.id];
   main.innerHTML = `<div class="quiz-meta"><p class="eyebrow">${day(data.id)} · ${label(data.kind)}</p><button id="review-notes" class="text-button">注意点を読む</button></div>${progress()}` +
     `<article class="question" aria-labelledby="question-title"><div class="question-top"><span class="number">Q${String(current + 1).padStart(2, '0')}</span><span>${escape(q.scene || '')}${q.review ? ' · 復習' : ''}</span></div><h1 id="question-title" class="question-title">${escape(q.ask || '正しいものを選んでください')}</h1><p class="stem" lang="en">${stem(q.stem)}</p><div class="options" role="group" aria-label="選択肢">` +
-    q.options.map((o, i) => `<button class="option${i === selected ? ' selected' : ''}${a && o.ok ? ' correct' : ''}${a && a.choice === i && !o.ok ? ' wrong' : ''}" data-choice="${i}" aria-pressed="${i === (a ? a.choice : selected)}" ${a ? 'disabled' : ''}><span class="option-key">${i + 1}</span><span lang="en">${rich(o.t)}</span>${a && o.ok ? '<span class="answer-mark">正解</span>' : ''}</button>`).join('') +
+    q.options.map((o, i) => `<button class="option${i === selected ? ' selected' : ''}${a && o.ok ? ' correct' : ''}${a && a.choice === i && !o.ok ? ' wrong' : ''}" data-choice="${i}" aria-pressed="${i === (a ? a.choice : selected)}" ${a ? 'disabled' : ''}><span class="option-key">${KEYS[i]}</span><span lang="en">${rich(o.t)}</span>${a && o.ok ? '<span class="answer-mark">正解</span>' : ''}</button>`).join('') +
     `</div>${a ? `<section class="feedback ${a.correct ? 'good' : 'bad'}" aria-label="答え合わせ"><h2>${a.correct ? '正解です。' : 'ここを確認しましょう。'}</h2><p>${rich(q.explain)}</p>${!a.correct && q.options[a.choice].why ? `<p class="why">選んだ答えについて：${rich(q.options[a.choice].why)}</p>` : ''}<details><summary>ほかの選択肢の解説</summary>${q.options.filter(o => !o.ok).map(o => `<p><strong lang="en">${rich(o.t)}</strong><br>${rich(o.why)}</p>`).join('')}</details></section>` : ''}</article>` +
-    `<div class="actions"><button id="prev" class="secondary" ${current ? '' : 'disabled'}>← 前の問題</button>${a ? `<button id="next" class="primary">${current + 1 === data.questions.length ? '結果を見る' : '次の問題'} →</button>` : `<button id="answer" class="primary" ${selected < 0 ? 'disabled' : ''}>答えを確かめる <kbd>Enter</kbd></button>`}</div><p class="keyhelp"><kbd>j</kbd><kbd>k</kbd> / <kbd>↑</kbd><kbd>↓</kbd> 選ぶ　<kbd>1</kbd>〜<kbd>4</kbd> 直接選択<br><kbd>Enter</kbd> ${a ? '次へ' : '答える'}　<kbd>h</kbd><kbd>l</kbd> / <kbd>←</kbd><kbd>→</kbd> 問題を移動</p><p id="announcement" class="sr-only" role="status"></p>`;
+    `<div class="actions"><button id="prev" class="secondary" ${current ? '' : 'disabled'}>← 前の問題</button>${a ? `<button id="next" class="primary">${current + 1 === data.questions.length ? '結果を見る' : '次の問題'} →</button>` : `<button id="answer" class="primary" ${selected < 0 ? 'disabled' : ''}>答えを確かめる <kbd>Enter</kbd></button>`}</div><p class="keyhelp"><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> 選択肢 1〜4 を選ぶ　<kbd>Enter</kbd> ${a ? '次へ' : '答える'}</p><p id="announcement" class="sr-only" role="status"></p>`;
   document.querySelectorAll('[data-choice]').forEach(b => { b.onclick = () => select(Number(b.dataset.choice)); });
   document.querySelector('#answer')?.addEventListener('click', submit);
   document.querySelector('#prev').onclick = previous;
@@ -108,18 +109,18 @@ function summary() {
 function render(focus = false) { ({ notes, quiz, summary })[page](); if (focus) moveFocus(); }
 
 window.addEventListener('keydown', e => {
-  if (!data || e.repeat || e.isComposing || e.ctrlKey || e.metaKey || e.altKey ||
+  // Match physical keys (e.code) so Japanese input mode, which reports 'Process' or kana in e.key, still works.
+  if (!data || e.repeat || e.ctrlKey || e.metaKey || e.altKey ||
       e.target.closest('input, textarea, select, [contenteditable="true"], summary')) return;
-  const key = e.key.toLowerCase();
+  const code = e.code, enter = code === 'Enter' || code === 'NumpadEnter';
+  const take = () => { e.preventDefault(); e.stopImmediatePropagation(); };
   if (page === 'notes') {
-    if (['l', 'arrowright'].includes(key) || (key === 'enter' && (e.target === main || e.target === document.body))) { e.preventDefault(); e.stopImmediatePropagation(); document.querySelector('#next').click(); }
-    if (['h', 'arrowleft'].includes(key)) { e.preventDefault(); e.stopImmediatePropagation(); document.querySelector('#prev').click(); }
+    if (code === 'KeyL' || code === 'ArrowRight' || (enter && (e.target === main || e.target === document.body))) { take(); document.querySelector('#next').click(); }
+    if (code === 'KeyH' || code === 'ArrowLeft') { take(); document.querySelector('#prev').click(); }
   } else if (page === 'quiz') {
-    const a = answers[data.questions[current].id];
-    if (!a && ['j', 'k', 'arrowup', 'arrowdown', '1', '2', '3', '4'].includes(key)) {
-      e.preventDefault(); e.stopImmediatePropagation(); select(/^[1-4]$/.test(key) ? Number(key) - 1 : (selected + (['j', 'arrowdown'].includes(key) ? 1 : selected < 0 ? 4 : -1) + 4) % 4);
-    } else if (['h', 'arrowleft', 'l', 'arrowright'].includes(key)) { e.preventDefault(); e.stopImmediatePropagation(); ['h', 'arrowleft'].includes(key) ? previous() : next(); }
-    else if (key === 'enter' && (e.target === main || e.target === document.body || e.target.closest('[data-choice]'))) { e.preventDefault(); e.stopImmediatePropagation(); a ? next() : submit(); }
+    const a = answers[data.questions[current].id], choice = CHOICE_CODES.indexOf(code);
+    if (!a && choice >= 0) { take(); select(choice); }
+    else if (enter && !e.target.closest('a, button:not([data-choice]):not(#answer):not(#next)')) { take(); a ? next() : submit(); }
   }
 }, { capture: true });
 
@@ -139,7 +140,7 @@ window.addEventListener('keydown', e => {
     if (firstMissing === -1) page = 'summary';
     else if (Object.keys(answers).length) { page = 'quiz'; current = firstMissing; }
     else if (!data.notes.length) page = 'quiz';
-    render();
+    render(true);
   } catch (error) {
     main.innerHTML = heading('ENGLISH DRILL', '問題を開けませんでした。', error.message) + '<p>接続を確認して、もう一度お試しください。</p><div class="actions"><a class="secondary" href="/">問題一覧へ</a><button class="primary" id="retry">もう一度読み込む</button></div>';
     document.querySelector('#retry').onclick = () => location.reload();
