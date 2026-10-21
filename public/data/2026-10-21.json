@@ -1,0 +1,355 @@
+{
+  "id": "2026-10-21",
+  "kind": "morning",
+  "set_hash": "d0b70c9e6cc1877cd55f046889c63a773c055f05c580e8e2e7ec19bc02159ded",
+  "notes": [
+    {
+      "tag": "語の組み合わせ",
+      "title": "名詞ごとに決まった動詞を使う",
+      "rule": "「〜する」を日本語から訳さず、名詞とセットの動詞で言う（give a presentation / take a break / make a mistake）",
+      "why": [
+        "日本語は「発表する」「休憩する」「ミスする」と、どれも「する」で言える",
+        "英語は名詞ごとに組む動詞が決まっていて、意味の近い動詞に置き換えると不自然になる",
+        "implement は仕組みや計画を「実装する・実行する」で、発表や決定には使わない"
+      ],
+      "examples": [
+        {
+          "bad": "After I implemented the presentation, my manager gave me some feedback."
+        },
+        {
+          "good": "After I **gave** the presentation, my manager gave me some feedback."
+        },
+        {
+          "good": "I **made** a mistake in the report."
+        }
+      ]
+    },
+    {
+      "tag": "文法",
+      "title": "数えない名詞に a や -s を付ける",
+      "rule": "feedback / advice / information のような数えない名詞は、a も -s も付けない。量は some / a lot of で言う",
+      "why": [
+        "日本語には単数・複数の区別がないので、英語で名詞を言うたびに a や -s を足したくなる",
+        "数えない名詞は「ひとかたまりの量」として扱うので、1 つ 2 つと数えない"
+      ],
+      "examples": [
+        {
+          "bad": "I got many feedbacks from clients."
+        },
+        {
+          "good": "I got **a lot of feedback** from clients."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Our team needs to ___ a decision about the new framework by Friday.",
+      "options": [
+        {
+          "t": "do",
+          "why": "decision と組む動詞は make。do a decision とは言いません。"
+        },
+        {
+          "t": "make",
+          "ok": true
+        },
+        {
+          "t": "create",
+          "why": "create は「新しく作り出す」。決定には使わず、make a decision と言います。"
+        },
+        {
+          "t": "put",
+          "why": "put a decision という組み合わせはありません。"
+        }
+      ],
+      "explain": "「決める」は make a decision。名詞 decision とセットで覚えます。",
+      "review": true
+    },
+    {
+      "id": "q02",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "Excuse me, could you [[take a photo]] of us in front of the lake?",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "make a photo",
+          "why": "写真を「撮る」は take。make a photo とは言いません。"
+        },
+        {
+          "t": "do a photo",
+          "why": "do a photo という組み合わせはありません。"
+        },
+        {
+          "t": "take photo",
+          "why": "photo は数える名詞なので a が要ります（take a photo）。"
+        }
+      ],
+      "explain": "写真を撮るは take a photo で、このままで正しい文です。take a picture とも言えます。",
+      "review": true
+    },
+    {
+      "id": "q03",
+      "label": "数えない名詞",
+      "scene": "地域",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "The city library now lends out ___ for families, like tents and sleeping bags.",
+      "options": [
+        {
+          "t": "some camping equipments",
+          "why": "equipment は数えない名詞なので -s は付きません。"
+        },
+        {
+          "t": "a camping equipment",
+          "why": "equipment に a は付きません。1 つなら a piece of equipment。"
+        },
+        {
+          "t": "many camping equipments",
+          "why": "many は数える名詞用。equipment には使いません。"
+        },
+        {
+          "t": "some camping equipment",
+          "ok": true
+        }
+      ],
+      "explain": "equipment（道具・用具）も feedback・information と同じ数えない名詞。量は some ＋ そのままの形。",
+      "review": true
+    },
+    {
+      "id": "q04",
+      "label": "数えない名詞",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "After the demo, the client gave us [[a lot of feedbacks]], and most of it was positive.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "feedback は数えない名詞なので feedbacks とは言いません。"
+        },
+        {
+          "t": "many feedbacks",
+          "why": "many も -s も数える名詞用。feedback には使いません。"
+        },
+        {
+          "t": "a lot of feedback",
+          "ok": true
+        },
+        {
+          "t": "a feedback",
+          "why": "feedback に a は付きません。量が多い話なら a lot of feedback。"
+        }
+      ],
+      "explain": "feedback は数えないので a lot of feedback。後ろの most of it が単数で受けているのも同じ理由です。",
+      "review": true
+    },
+    {
+      "id": "q05",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（レビューの指摘が正しくても正しくなくても、まずお礼を言うようにしている）",
+      "options": [
+        {
+          "t": "Whether the feedback is correct or not, I always thank the reviewer first.",
+          "ok": true
+        },
+        {
+          "t": "Whichever the feedback is correct or not, I always thank the reviewer first.",
+          "why": "whichever は「どちらの〜でも」（whichever you choose）。後ろに文＋ or not は続きません。"
+        },
+        {
+          "t": "Either the feedback is correct or not, I always thank the reviewer first.",
+          "why": "either A or B は語句を並べる形。文＋ or not で「〜でも〜でも」にはなりません。"
+        },
+        {
+          "t": "Even the feedback is correct or not, I always thank the reviewer first.",
+          "why": "even は「〜でさえ」。文の頭に置いて「〜かどうか」の意味にはなりません。"
+        }
+      ],
+      "explain": "「〜かどうかに関わらず」は whether … or not。Whether or not the feedback is correct, … の順でも言えます。",
+      "review": true
+    },
+    {
+      "id": "q06",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "When my bike makes a strange noise, I check the chain [[at first]] and then the brakes.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "at first は「最初のうちは（あとで変わった）」。手順の「まず」ではありません。"
+        },
+        {
+          "t": "at the first",
+          "why": "この形はありません。"
+        },
+        {
+          "t": "first",
+          "ok": true
+        },
+        {
+          "t": "in first",
+          "why": "この形はありません。"
+        }
+      ],
+      "explain": "手順の「まず」は first（and then … と続く）。at first は At first I didn't like it, but … のように、あとで変わる話で使います。",
+      "review": true
+    },
+    {
+      "id": "q07",
+      "label": "否定文の「〜も」",
+      "scene": "地域",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "The bus didn't come on time this morning, and the train wasn't on time ___.",
+      "options": [
+        {
+          "t": "too",
+          "why": "too は肯定文の「〜も」。not のある文では either を使います。"
+        },
+        {
+          "t": "either",
+          "ok": true
+        },
+        {
+          "t": "also",
+          "why": "also も肯定文用。否定文の文末には置きません。"
+        },
+        {
+          "t": "neither",
+          "why": "neither はそれ自体が否定なので、wasn't と重ねません。"
+        }
+      ],
+      "explain": "not のある文の「〜も」は文末の either。neither を使うなら … and neither was the train。",
+      "review": true
+    },
+    {
+      "id": "q08",
+      "label": "こう言うのが自然",
+      "scene": "学習",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "The podcast was so interesting that I ___ time and almost missed my bus stop.",
+      "options": [
+        {
+          "t": "kept track of",
+          "why": "keep track of は「（時間などを）把握しておく」。乗り過ごしかけた話と逆の意味になります。"
+        },
+        {
+          "t": "forgot",
+          "why": "forget time という言い方はしません。"
+        },
+        {
+          "t": "missed",
+          "why": "miss time という言い方はしません。"
+        },
+        {
+          "t": "lost track of",
+          "ok": true
+        }
+      ],
+      "explain": "「（時間・流れが）分からなくなる」は lose track of。I lost track of what to do next. のようにも使えます。",
+      "review": true
+    },
+    {
+      "id": "q09",
+      "label": "こう言うのが自然",
+      "scene": "レッスン",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I've already read this part, so ___ the comprehension part on page 2?",
+      "options": [
+        {
+          "t": "can we move on to",
+          "ok": true
+        },
+        {
+          "t": "can we move on",
+          "why": "次の場所へ進むときは move on to ～。to が要ります。"
+        },
+        {
+          "t": "can we move to on",
+          "why": "語順が崩れています。move on to の順です。"
+        },
+        {
+          "t": "could we moving on to",
+          "why": "could のあとは動詞の原形（move）です。"
+        }
+      ],
+      "explain": "進め方の提案は can we move on to …? と聞く形に。「2 ページの」は on page 2（the は付けません）。",
+      "review": false
+    },
+    {
+      "id": "q10",
+      "label": "こう言うのが自然",
+      "scene": "レッスン",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Sorry, I couldn't ___ you. Could you say that again?",
+      "options": [
+        {
+          "t": "listen",
+          "why": "listen は自分から「聞こうとする」。人を目的語にするなら listen to で、ここは「聞こえなかった」なので hear。"
+        },
+        {
+          "t": "hearing",
+          "why": "couldn't のあとは動詞の原形です。"
+        },
+        {
+          "t": "hear",
+          "ok": true
+        },
+        {
+          "t": "listen at",
+          "why": "listen at という組み合わせはありません。"
+        }
+      ],
+      "explain": "耳に入る・聞こえるは hear。Sorry, I couldn't hear you. はレッスンで音声が途切れたときにそのまま使えます。",
+      "review": false
+    },
+    {
+      "id": "q11",
+      "label": "こう言うのが自然",
+      "scene": "レッスン",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I don't have any questions right now, but I may ask ___.",
+      "options": [
+        {
+          "t": "late",
+          "why": "late は「遅れて・遅い時間に」。「あとで」ではありません。"
+        },
+        {
+          "t": "later",
+          "ok": true
+        },
+        {
+          "t": "lately",
+          "why": "lately は「最近」。未来の話には使いません。"
+        },
+        {
+          "t": "ago",
+          "why": "ago は「〜前」で過去の話に使い、two days ago のように期間を前に付けます。"
+        }
+      ],
+      "explain": "「あとで」は later。I may ask later. / Can I ask you later? はレッスンの終わりにそのまま使えます。",
+      "review": false
+    }
+  ]
+}
