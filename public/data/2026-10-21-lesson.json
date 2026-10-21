@@ -1,0 +1,282 @@
+{
+  "id": "2026-10-21-lesson",
+  "kind": "lesson",
+  "set_hash": "7caae7971a42bac9b473c7c3513ef7267f22cc86476b976f32e4996e4fcaef29",
+  "notes": [
+    {
+      "tag": "言い方",
+      "title": "言葉を探すときのつなぎ",
+      "rule": "言葉を探すときは how to say / what to say で止めず、How should I put it? / What's the word? でつなぐ",
+      "why": [
+        "「何と言うか」をそのまま訳すと how to say になるが、英語では文の形にならず、つなぎとして聞こえない",
+        "英語のつなぎは自分への問いかけの形（How should I put it? / What's the word?）で、相手にも「言葉を探している」と伝わる",
+        "how to say は「言い方」という名詞のかたまりなので、I don't know **how to say** this. のように文の中でなら使える"
+      ],
+      "examples": [
+        {
+          "bad": "The train was, how to say, really crowded."
+        },
+        {
+          "good": "The train was, **how should I put it**, really crowded."
+        },
+        {
+          "good": "I need a, **what's the word**, a charger for this."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "On a video call: \"Sorry, that came out wrong. Let me ___ that.\"",
+      "options": [
+        {
+          "t": "borrow",
+          "why": "borrow は「借りる」。言い直す意味になりません。"
+        },
+        {
+          "t": "reply",
+          "why": "reply は自動詞で、reply that とは言いません。意味も「返事をする」です。"
+        },
+        {
+          "t": "rephrase",
+          "ok": true
+        },
+        {
+          "t": "talk",
+          "why": "talk は自動詞で、talk that とは言いません。"
+        }
+      ],
+      "explain": "自分の発言を別の言葉で言い直すのは rephrase。Let me put that differently. でも言えます。",
+      "review": false
+    },
+    {
+      "id": "q02",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "My friend invited me to her wedding, but I can't go. ___ should I say to her?",
+      "options": [
+        {
+          "t": "What",
+          "ok": true
+        },
+        {
+          "t": "How",
+          "why": "say には言う中身（目的語）が要ります。how なら How should I say it to her? と it が必要です。"
+        },
+        {
+          "t": "Which",
+          "why": "which は決まった選択肢から選ぶときの語で、ここでは選択肢がありません。"
+        },
+        {
+          "t": "Where",
+          "why": "where は場所を聞く語で、「何と言えば」になりません。"
+        }
+      ],
+      "explain": "「何と言えばいい？」は What should I say? 。say の目的語を what が担います。",
+      "review": false
+    },
+    {
+      "id": "q03",
+      "label": "こう言うのが自然",
+      "scene": "地域",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Living in downtown Denver is convenient, but it ___ a lot of money.",
+      "options": [
+        {
+          "t": "needs",
+          "why": "need は「必要とする」で、物事の値段を言うときには使いません。"
+        },
+        {
+          "t": "spends",
+          "why": "spend は人が主語で「お金を使う」。暮らしが主語なら cost です。"
+        },
+        {
+          "t": "pays",
+          "why": "it pays a lot of money は「（それが）たくさんお金を払う・稼げる」の意味になります。"
+        },
+        {
+          "t": "costs",
+          "ok": true
+        }
+      ],
+      "explain": "「お金がかかる」は物事を主語にして cost。It takes a lot of money to … の形でも言えます。",
+      "review": false
+    },
+    {
+      "id": "q04",
+      "label": "こう言うのが自然",
+      "scene": "旅行",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "At the hotel desk, I'm not sure [[what I should say]] if I want to check out a day early.",
+      "options": [
+        {
+          "t": "how I should say",
+          "why": "say に目的語がなくなります。how なら how I should say it と it が必要です。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "what should I say",
+          "why": "I'm not sure の後ろの節は疑問文の語順にせず、what I should say と主語＋動詞の順にします。"
+        },
+        {
+          "t": "how to say",
+          "why": "say の目的語がありません。how to say it なら言えます。"
+        }
+      ],
+      "explain": "what I should say で正しい。what が say の目的語で、節の中は主語＋動詞の順。",
+      "review": false
+    },
+    {
+      "id": "q05",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "言葉を探しながらつなぐなら、空所に入るものは？",
+      "stem": "The new feature is, ___, a shortcut for people who use the app every day.",
+      "options": [
+        {
+          "t": "how to say",
+          "why": "「言い方」という名詞のかたまりで、文の途中に挟んでもつなぎになりません。"
+        },
+        {
+          "t": "how should I put it",
+          "ok": true
+        },
+        {
+          "t": "what to say",
+          "why": "「言うべきこと」という名詞のかたまりで、つなぎになりません。"
+        },
+        {
+          "t": "how to say it",
+          "why": "it を付けても名詞のかたまりのままで、つなぎになりません。"
+        }
+      ],
+      "explain": "言葉を探してつなぐときは How should I put it? のように自分に問いかける形。What's the word? でも言えます。",
+      "review": false
+    },
+    {
+      "id": "q06",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "旅行",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Excuse me, I'm looking for a, [[how to say]], a small bag you wear around your waist.",
+      "options": [
+        {
+          "t": "what to say",
+          "why": "「言うべきこと」という名詞のかたまりで、つなぎになりません。"
+        },
+        {
+          "t": "how to call",
+          "why": "日本語の「何と呼ぶか」の直訳で、英語のつなぎにはなりません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "how to say は名詞のかたまりで、言葉を探すつなぎとしては通じにくい形です。"
+        },
+        {
+          "t": "what's the word",
+          "ok": true
+        }
+      ],
+      "explain": "単語が出てこないときは what's the word で時間をかせぐ。",
+      "review": false
+    },
+    {
+      "id": "q07",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "My neighbor is, [[how should I put it]], a little too friendly sometimes.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "how to say",
+          "why": "名詞のかたまりで、つなぎになりません。今のままで正しい形です。"
+        },
+        {
+          "t": "what to say",
+          "why": "「言うべきこと」という名詞のかたまりで、つなぎになりません。"
+        },
+        {
+          "t": "how should I put",
+          "why": "put には目的語の it が要ります。How should I put it? で決まった言い方です。"
+        }
+      ],
+      "explain": "how should I put it で正しい。言いにくいことを和らげて言う前置きにもなります。",
+      "review": false
+    },
+    {
+      "id": "q08",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "学習",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I know what I mean, but I don't know ___ this in English.",
+      "options": [
+        {
+          "t": "what to say",
+          "why": "what が say の目的語になるので、this と目的語が二つになります。"
+        },
+        {
+          "t": "how should I say",
+          "why": "I don't know の後ろの節は疑問文の語順にしません。"
+        },
+        {
+          "t": "how to say",
+          "ok": true
+        },
+        {
+          "t": "how saying",
+          "why": "how のあとに -ing は続きません。"
+        }
+      ],
+      "explain": "how to say は文の中に入れて、目的語（this / it）を付ければ正しい。つなぎに単独で使わないだけ。",
+      "review": false
+    },
+    {
+      "id": "q09",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "仕事",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（会議で図の名前が出てこない。「これは、ええと何だっけ、タイムラインの図です」）",
+      "options": [
+        {
+          "t": "This is a, how to say, a timeline chart.",
+          "why": "how to say は名詞のかたまりで、つなぎになりません。"
+        },
+        {
+          "t": "This is a, what to say, a timeline chart.",
+          "why": "what to say は「言うべきこと」で、つなぎになりません。"
+        },
+        {
+          "t": "This is a, what's word, a timeline chart.",
+          "why": "word の前の the が抜けています。What's the word? で決まった形です。"
+        },
+        {
+          "t": "This is a, what's the word, a timeline chart.",
+          "ok": true
+        }
+      ],
+      "explain": "単語を探すつなぎは what's the word。How should I put it? は言い方を探すときに使う。",
+      "review": false
+    }
+  ]
+}
