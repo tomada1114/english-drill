@@ -1,0 +1,341 @@
+{
+  "id": "2026-10-22-lesson",
+  "kind": "lesson",
+  "set_hash": "cf6e977f848f3a2504851dddef07e639a23bfef035abf672464fc5c594c9e034",
+  "notes": [
+    {
+      "tag": "文法",
+      "title": "今の習慣の「最近」は these days",
+      "rule": "今くり返している習慣・今の状態の「最近」は these days で言う。recently は「最近〜した」（過去形）か「最近ずっと〜している」（現在完了）と組む",
+      "why": [
+        "日本語の「最近」は、最近起きたこと（最近引っ越した）にも、今の習慣（最近は6時に起きる）にも使える",
+        "英語の recently は「少し前に起きた・始まった」ことを指すので、過去形か現在完了と組む",
+        "今くり返していること・今の状態は these days（nowadays でも可）で言う"
+      ],
+      "examples": [
+        {
+          "bad": "Recently, I walk to work."
+        },
+        {
+          "good": "**These days**, I walk to work."
+        },
+        {
+          "good": "I **recently moved** to Colorado."
+        },
+        {
+          "good": "I**'ve been walking** to work **recently**."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Manager: \"That's the plan for this sprint. Any questions?\" You: \"___ I'll message you if something comes up.\"",
+      "options": [
+        {
+          "t": "Nothing special.",
+          "why": "「特別なことは何もない」の意味で、質問があるかへの答えになりません。"
+        },
+        {
+          "t": "No questions so far.",
+          "ok": true
+        },
+        {
+          "t": "I have no special.",
+          "why": "special は形容詞で、それだけで名詞の代わりにはなりません。"
+        },
+        {
+          "t": "No particular.",
+          "why": "particular は形容詞で、それだけで答えになりません。"
+        }
+      ],
+      "explain": "「特にないです」は質問が無いと言い切る。Not at the moment. / No, I'm good. でも言えます。",
+      "review": false
+    },
+    {
+      "id": "q02",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "For me, closing my laptop is my ___ that the workday is over.",
+      "options": [
+        {
+          "t": "switch",
+          "why": "switch は機器のスイッチで、「〜という合図」の意味で that 節を続けられません。"
+        },
+        {
+          "t": "point",
+          "why": "my point that … は「〜という私の主張」の意味になります。"
+        },
+        {
+          "t": "timing",
+          "why": "timing は「時機・間の取り方」で、「合図」の意味になりません。"
+        },
+        {
+          "t": "signal",
+          "ok": true
+        }
+      ],
+      "explain": "「〜という合図」は signal that …。中身を that 節で言えば「一日の終わりのスイッチ」が伝わります。",
+      "review": false
+    },
+    {
+      "id": "q03",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "My commute takes about 50 minutes each way[[, so long for me]].",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "節をつなぐ語がなく、so long for me が文から浮いています。"
+        },
+        {
+          "t": ", which is really long for me",
+          "ok": true
+        },
+        {
+          "t": ", what is really long for me",
+          "why": "what は前の内容を受けてつなげません。前の文全体を受けるのは , which です。"
+        },
+        {
+          "t": ", that is really long for me",
+          "why": "コンマのあとで前の内容を受けるときは that ではなく which を使います。"
+        }
+      ],
+      "explain": "前の文に感想を足すときは , which is … でつなぐ。That's really long for me. と文を分けても言えます。",
+      "review": false
+    },
+    {
+      "id": "q04",
+      "label": "こう言うのが自然",
+      "scene": "学習",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（オンラインレッスンの途中で講師に「ここまでで質問はある？」と聞かれた。「今のところないです」）",
+      "options": [
+        {
+          "t": "Nothing special so far.",
+          "why": "Nothing special は「特別なことは何もない」で、質問への答えになりません。"
+        },
+        {
+          "t": "There is no special question.",
+          "why": "「特別な質問はない」になり、質問が無いという答えとしては不自然です。"
+        },
+        {
+          "t": "No questions so far.",
+          "ok": true
+        },
+        {
+          "t": "I don't have question so far.",
+          "why": "question は数えられる名詞なので、a か複数形が要ります。"
+        }
+      ],
+      "explain": "No questions so far. で「今のところ質問はありません」。後で聞くなら I'll ask if anything comes up. と足せます。",
+      "review": false
+    },
+    {
+      "id": "q05",
+      "label": "こう言うのが自然",
+      "scene": "地域",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "We got a foot of snow in Fort Collins last night, ___ unusual for early October.",
+      "options": [
+        {
+          "t": "who is",
+          "why": "who は人を受ける語で、出来事には使えません。"
+        },
+        {
+          "t": "what is",
+          "why": "what は前の内容を受けてつなげません。"
+        },
+        {
+          "t": "that is",
+          "why": "コンマのあとで前の内容を受けるときは that ではなく which を使います。"
+        },
+        {
+          "t": "which is",
+          "ok": true
+        }
+      ],
+      "explain": "前の出来事に感想を足すときは , which is …。That's unusual for early October. と文を分けても言えます。",
+      "review": false
+    },
+    {
+      "id": "q06",
+      "label": "「最近」と recently",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I used to get up at 8 a.m., but I wake up at 6 a.m. [[recently]].",
+      "options": [
+        {
+          "t": "these days",
+          "ok": true
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "今の習慣（wake up）に recently は合いません。recently は過去形か現在完了と組みます。"
+        },
+        {
+          "t": "recent",
+          "why": "recent は形容詞で、文末で「最近」の意味の副詞として使えません。"
+        },
+        {
+          "t": "in recent",
+          "why": "in recent だけでは成り立ちません。in recent years のように名詞が要ります。"
+        }
+      ],
+      "explain": "今くり返していることは these days。nowadays でも言えます。",
+      "review": false
+    },
+    {
+      "id": "q07",
+      "label": "「最近」と recently",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Our office is pretty quiet ___ because a lot of people work from home.",
+      "options": [
+        {
+          "t": "recently",
+          "why": "今の状態（is quiet）に recently は合いません。recently は過去形か現在完了と組みます。"
+        },
+        {
+          "t": "before",
+          "why": "before は「以前」で、今の状態の話になりません。"
+        },
+        {
+          "t": "these days",
+          "ok": true
+        },
+        {
+          "t": "at recent",
+          "why": "at recent という言い方はありません。"
+        }
+      ],
+      "explain": "今の状態の「最近」は these days。It's been pretty quiet recently. と現在完了にすれば recently も使えます。",
+      "review": false
+    },
+    {
+      "id": "q08",
+      "label": "「最近」と recently",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "[[Recently, I drink]] green tea instead of coffee in the morning.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "今の習慣（drink）に recently は合いません。"
+        },
+        {
+          "t": "Recently, I am drink",
+          "why": "am と drink を並べる形はありません。recently の問題も残ります。"
+        },
+        {
+          "t": "These days, I drink",
+          "ok": true
+        },
+        {
+          "t": "Recent days, I drink",
+          "why": "「最近の日々」の直訳で、英語では言いません。"
+        }
+      ],
+      "explain": "毎朝くり返していることなので These days。I've recently switched to green tea. なら一回の変化として recently を使えます。",
+      "review": false
+    },
+    {
+      "id": "q09",
+      "label": "「最近」と recently",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I [[recently started]] a new project at work, so I'm a bit busy.",
+      "options": [
+        {
+          "t": "these days started",
+          "why": "these days は今の習慣・状態に使い、一回の出来事の過去形とは組みません。"
+        },
+        {
+          "t": "recently start",
+          "why": "始めたのは過去の一回の出来事なので、過去形 started にします。"
+        },
+        {
+          "t": "nowadays started",
+          "why": "nowadays も今の習慣・状態に使う語で、過去形とは組みません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        }
+      ],
+      "explain": "recently started で正しい。「最近〜した」という一回の出来事は recently ＋ 過去形で言います。",
+      "review": false
+    },
+    {
+      "id": "q10",
+      "label": "「最近」と recently",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I ___ a lot of meetings recently, so I have less time to write code.",
+      "options": [
+        {
+          "t": "have had",
+          "ok": true
+        },
+        {
+          "t": "have",
+          "why": "現在形に recently は合いません。最近ずっと続いていることは現在完了にします。"
+        },
+        {
+          "t": "has had",
+          "why": "主語が I なので have had です。"
+        },
+        {
+          "t": "having",
+          "why": "動詞の形がなく、文になりません。"
+        }
+      ],
+      "explain": "「最近ずっと〜だ」は現在完了＋recently。I have a lot of meetings these days. と these days で言うこともできます。",
+      "review": false
+    },
+    {
+      "id": "q11",
+      "label": "「最近」と recently",
+      "scene": "地域",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（最近、この辺りでは家賃が上がり続けている）",
+      "options": [
+        {
+          "t": "Rents go up around here recently.",
+          "why": "現在形に recently は合いません。"
+        },
+        {
+          "t": "Recently rents go up around here.",
+          "why": "語順を変えても、現在形と recently の組み合わせは同じく不自然です。"
+        },
+        {
+          "t": "Rents have been go up around here recently.",
+          "why": "have been のあとは going にします。"
+        },
+        {
+          "t": "Rents have been going up around here recently.",
+          "ok": true
+        }
+      ],
+      "explain": "最近から今まで続いている変化は現在完了進行形＋recently。Rents keep going up around here these days. とも言えます。",
+      "review": false
+    }
+  ]
+}
