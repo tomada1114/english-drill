@@ -1,4 +1,4 @@
-import { ID, validateSet, choose, restoreAnswers, result, escape, rich, stem } from './core.js';
+import { ID, validateSet, choose, restoreAnswers, clipboardText, escape, rich, stem } from './core.js';
 
 const main = document.querySelector('main');
 const label = kind => kind === 'lesson' ? 'レッスン後' : '受講前';
@@ -96,9 +96,9 @@ function summary() {
   const right = Object.values(answers).filter(a => a.correct).length;
   const wrong = data.questions.filter(q => !answers[q.id].correct);
   main.innerHTML = heading(`${day(data.id)} · ${label(data.kind)}`, '今日のドリル、おつかれさまでした。') +
-    `<div class="result-score"><b>${right}<span> / ${data.questions.length}</span></b><p>問 正解</p></div><section class="export"><h2>結果をコピーして、学習記録へ。</h2><p>Claude Code または Codex に貼り付けて、「この結果を取り込んで」と伝えてください。</p><button id="copy" class="primary">結果をコピー</button><p id="copy-status" role="status"></p><details id="copy-fallback"><summary>結果のテキストを表示</summary><label for="result-json">コピーする結果</label><textarea id="result-json" readonly spellcheck="false"></textarea></details></section>` +
+    `<div class="result-score"><b>${right}<span> / ${data.questions.length}</span></b><p>問 正解</p></div><section class="export"><h2>結果をコピーして、学習記録へ。</h2><p>Claude Code または Codex に貼り付けるだけで、取り込みとデイリーノートのチェックまで頼めます。</p><button id="copy" class="primary">結果をコピー</button><p id="copy-status" role="status"></p><details id="copy-fallback"><summary>結果のテキストを表示</summary><label for="result-json">コピーする結果</label><textarea id="result-json" readonly spellcheck="false"></textarea></details></section>` +
     `<section class="review"><h2>${wrong.length ? 'もう一度確認したい問題' : '全問正解です。'}</h2>${wrong.map(q => `<button class="review-link" data-review="${data.questions.indexOf(q)}">Q${data.questions.indexOf(q) + 1}　${escape(q.label)} <span>解説を見る →</span></button>`).join('')}</section><a class="back-home" href="/">問題一覧へ戻る →</a>`;
-  const text = JSON.stringify(result(data, answers), null, 2);
+  const text = clipboardText(data, answers);
   document.querySelector('#result-json').value = text;
   document.querySelector('#copy').onclick = async () => {
     try { await navigator.clipboard.writeText(text); document.querySelector('#copy-status').textContent = 'コピーしました。Claude Code または Codex に貼り付けてください。'; }

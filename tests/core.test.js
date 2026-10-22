@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readdir, readFile } from 'node:fs/promises';
-import { FORMAT, validateSet, choose, result, restoreAnswers, rich, stem } from '../public/core.js';
+import { FORMAT, validateSet, choose, result, clipboardText, restoreAnswers, rich, stem } from '../public/core.js';
 
 const sample = () => ({ id: '2026-10-20', set_hash: 'a'.repeat(64), notes: [], questions: [1,2].map(i => ({ id: `q0${i}`, options: [{ t: 'right', ok: true }, { t: 'wrong', why: 'No' }, { t: 'three' }, { t: 'four' }] })) });
 test('a first answer stays immutable and copy matches the importer contract', () => {
@@ -13,6 +13,14 @@ test('a first answer stays immutable and copy matches the importer contract', ()
   const doc = result(s, a);
   assert.equal(doc.format, FORMAT); assert.equal(doc.drill, s.id); assert.equal(doc.total, 2);
   assert.equal(doc.answers.q01.correct, true); assert.equal(doc.answers.q02.correct, false);
+});
+test('copied text carries the routine context and the exact result JSON', () => {
+  const s = { ...sample(), kind: 'lesson' };
+  const a = choose(s, choose(s, {}, 'q01', 0, '2026-10-20T10:00:00Z'), 'q02', 1, '2026-10-20T10:01:00Z');
+  const text = clipboardText(s, a);
+  assert.match(text, /daily-partner/); assert.match(text, /English Drill: 受講後/); assert.match(text, /1 \/ 2 問正解/);
+  const block = text.match(/```json\n([\s\S]+?)\n```/)[1];
+  assert.deepEqual(JSON.parse(block), result(s, a));
 });
 test('restoration rejects another snapshot, broken choices and forged answers', () => {
   const s = sample(), a = choose(s, {}, 'q01', 0);

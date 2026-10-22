@@ -40,6 +40,38 @@ export function result(data, answers) {
   return { format: FORMAT, drill: data.id, set_hash: data.set_hash, total: data.questions.length, answers: checked };
 }
 
+const CONTEXT = {
+  morning: { name: '受講前', line: 'English Drill: 受講前', about: 'NativeCamp のレッスン前に解く予習ドリルです。直近7日のドリルとレッスンから、今日使いたい言い方と復習を出しています。' },
+  lesson: { name: '受講後', line: 'English Drill: 受講後', about: 'NativeCamp のレッスン後に解く復習ドリルです。今日のレッスンで見つかった型と、期日が来た復習を出しています。' },
+};
+
+// The clipboard text opens with the context a fresh Claude Code or Codex session needs; the JSON block stays the importer contract.
+export function clipboardText(data, answers) {
+  const doc = result(data, answers), c = CONTEXT[data.kind] || CONTEXT.morning;
+  const right = Object.values(doc.answers).filter(a => a.correct).length;
+  const missed = data.questions.map((q, i) => ({ q, i })).filter(({ q }) => !doc.answers[q.id].correct)
+    .map(({ q, i }) => `Q${i + 1}${q.label ? `（${q.label}）` : ''}`);
+  return [
+    `English Drill（${data.id}・${c.name}）を解き終えました。結果を記録してください。`,
+    '',
+    '## 文脈',
+    `- tomada の英語学習の日課（iobsidian vault の daily-partner スキル）のうち、「${c.line}」の行にあたります。`,
+    `- ${c.about}`,
+    `- 結果: ${right} / ${doc.total} 問正解${missed.length ? `。間違えた問題: ${missed.join('、')}` : '（全問正解）'}`,
+    '',
+    '## お願い',
+    'daily-partner スキルの手順に従って、次をしてください（細かな手順はスキル側に書いてあります）。',
+    '1. 下の JSON を english-drill スキルで vault に取り込む。',
+    `2. 取り込めたら、Notion の今日のデイリーノートの「${c.line}」にチェックを付ける。`,
+    '3. 結果をひとことで伝え、ルーティンの次にやることをリンク付きで案内する。',
+    '',
+    '```json',
+    JSON.stringify(doc, null, 2),
+    '```',
+    '',
+  ].join('\n');
+}
+
 export function escape(text = '') {
   return String(text).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
