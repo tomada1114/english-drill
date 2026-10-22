@@ -62,7 +62,7 @@ function quiz() {
     `<article class="question" aria-labelledby="question-title"><div class="question-top"><span class="number">Q${String(current + 1).padStart(2, '0')}</span><span>${escape(q.scene || '')}${q.review ? ' · 復習' : ''}</span></div><h1 id="question-title" class="question-title">${escape(q.ask || '正しいものを選んでください')}</h1><p class="stem" lang="en">${stem(q.stem)}</p><div class="options" role="group" aria-label="選択肢">` +
     q.options.map((o, i) => `<button class="option${i === selected ? ' selected' : ''}${a && o.ok ? ' correct' : ''}${a && a.choice === i && !o.ok ? ' wrong' : ''}" data-choice="${i}" aria-pressed="${i === (a ? a.choice : selected)}" ${a ? 'disabled' : ''}><span class="option-key">${KEYS[i]}</span><span lang="en">${rich(o.t)}</span>${a && o.ok ? '<span class="answer-mark">正解</span>' : ''}</button>`).join('') +
     `</div>${a ? `<section class="feedback ${a.correct ? 'good' : 'bad'}" aria-label="答え合わせ"><h2>${a.correct ? '正解です。' : 'ここを確認しましょう。'}</h2><p>${rich(q.explain)}</p>${!a.correct && q.options[a.choice].why ? `<p class="why">選んだ答えについて：${rich(q.options[a.choice].why)}</p>` : ''}<details><summary>ほかの選択肢の解説</summary>${q.options.filter(o => !o.ok).map(o => `<p><strong lang="en">${rich(o.t)}</strong><br>${rich(o.why)}</p>`).join('')}</details></section>` : ''}</article>` +
-    `<div class="actions"><button id="prev" class="secondary" ${current ? '' : 'disabled'}>← 前の問題</button>${a ? `<button id="next" class="primary">${current + 1 === data.questions.length ? '結果を見る' : '次の問題'} →</button>` : `<button id="answer" class="primary" ${selected < 0 ? 'disabled' : ''}>答えを確かめる <kbd>Enter</kbd></button>`}</div><p class="keyhelp"><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> 選択肢 1〜4 を選ぶ　<kbd>Enter</kbd> ${a ? '次へ' : '答える'}</p><p id="announcement" class="sr-only" role="status"></p>`;
+    `<div class="actions"><button id="prev" class="secondary" ${current ? '' : 'disabled'}>← 前の問題</button>${a ? `<button id="next" class="primary">${current + 1 === data.questions.length ? '結果を見る' : '次の問題'} →</button>` : `<button id="answer" class="primary" ${selected < 0 ? 'disabled' : ''}>答えを確かめる <kbd>Enter</kbd></button>`}</div><p class="keyhelp"><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> 選択肢 1〜4 で答える　<kbd>Enter</kbd> ${a ? '次へ' : '選んだ答えを確かめる'}</p><p id="announcement" class="sr-only" role="status"></p>`;
   document.querySelectorAll('[data-choice]').forEach(b => { b.onclick = () => select(Number(b.dataset.choice)); });
   document.querySelector('#answer')?.addEventListener('click', submit);
   document.querySelector('#prev').onclick = previous;
@@ -119,7 +119,7 @@ window.addEventListener('keydown', e => {
     if (code === 'KeyH' || code === 'ArrowLeft') { take(); document.querySelector('#prev').click(); }
   } else if (page === 'quiz') {
     const a = answers[data.questions[current].id], choice = CHOICE_CODES.indexOf(code);
-    if (!a && choice >= 0) { take(); select(choice); }
+    if (!a && choice >= 0) { take(); select(choice); submit(); }
     else if (enter && !e.target.closest('a, button:not([data-choice]):not(#answer):not(#next)')) { take(); a ? next() : submit(); }
   }
 }, { capture: true });

@@ -10,8 +10,8 @@ import it into the private learning journal.
 
 ## Use
 
-- **H / J / K / L**: select option 1 / 2 / 3 / 4 directly. They work in Japanese input mode too.
-- **Enter**: check the answer, then move to the next question. No click is needed between questions.
+- **H / J / K / L**: answer with option 1 / 2 / 3 / 4 at once and show the result and explanation. They work in Japanese input mode too.
+- **Enter**: move to the next question (or check an option selected by touch or Tab). No click is needed between questions.
 - Touch or click an option, then check it with the answer button.
 - Read the explanation before moving on. First answers cannot be changed.
 - Copy completed results, or use the text fallback when clipboard access fails.
