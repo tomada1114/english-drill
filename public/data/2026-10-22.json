@@ -1,0 +1,379 @@
+{
+  "id": "2026-10-22",
+  "kind": "morning",
+  "set_hash": "d9ae50d555142125ae8a9e4c45423ffa1fe949cddb1eae4aebfda310caafb5e1",
+  "notes": [
+    {
+      "tag": "文法",
+      "title": "数えない名詞に a や -s を付けない",
+      "rule": "feedback / advice / information / furniture は a も -s も付けない。量は some / a lot of で言う",
+      "why": [
+        "日本語には単数・複数の区別がないので、話しながら a や -s を足したくなる",
+        "数えない名詞は「ひとかたまりの量」として扱い、1 つ 2 つと数えない"
+      ],
+      "examples": [
+        {
+          "bad": "My mentor gave me a good advice."
+        },
+        {
+          "good": "My mentor gave me **some good advice**."
+        }
+      ]
+    },
+    {
+      "tag": "語の組み合わせ",
+      "title": "名詞とセットの動詞で言う",
+      "rule": "「〜する」を日本語から訳さず、名詞と組む動詞で言う（give a presentation / give a speech / make a decision / take a break）",
+      "why": [
+        "日本語は「発表する」「決める」「休憩する」をどれも「する」で言える",
+        "英語は名詞ごとに組む動詞が決まっている。implement は計画や機能を「実行・実装する」で、発表には使わない"
+      ],
+      "examples": [
+        {
+          "bad": "After I implemented the presentation, my manager gave me some feedback."
+        },
+        {
+          "good": "After I **gave** the presentation, my manager gave me some feedback."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "数えない名詞",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "We just moved into a bigger apartment, so we need to buy ___ for the living room.",
+      "options": [
+        {
+          "t": "some furnitures",
+          "why": "furniture は数えない名詞なので -s は付きません。"
+        },
+        {
+          "t": "a furniture",
+          "why": "furniture に a は付きません。1 つなら a piece of furniture。"
+        },
+        {
+          "t": "some furniture",
+          "ok": true
+        },
+        {
+          "t": "many furnitures",
+          "why": "many も -s も数える名詞用。furniture には使いません。"
+        }
+      ],
+      "explain": "furniture（家具）も feedback・advice と同じ数えない名詞。量は some ＋ そのままの形。",
+      "review": true
+    },
+    {
+      "id": "q02",
+      "label": "数えない名詞",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "Before my first job interview in the US, my mentor gave me [[some good advice]] about how to talk about my projects.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "a good advice",
+          "why": "advice は数えない名詞なので a は付きません。"
+        },
+        {
+          "t": "some good advices",
+          "why": "advice に -s は付きません。"
+        },
+        {
+          "t": "many good advices",
+          "why": "many も -s も数える名詞用。量が多いなら a lot of good advice。"
+        }
+      ],
+      "explain": "advice は数えないので some good advice で正しい文です。1 つを言いたいなら a piece of advice。",
+      "review": true
+    },
+    {
+      "id": "q03",
+      "label": "動詞＋名詞の組み合わせ",
+      "scene": "ニュース",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "The mayor will ___ a speech at the opening of the new public library on Saturday.",
+      "options": [
+        {
+          "t": "say",
+          "why": "say は言葉そのものを目的語にとります（say hello）。speech とは組みません。"
+        },
+        {
+          "t": "give",
+          "ok": true
+        },
+        {
+          "t": "talk",
+          "why": "talk は目的語に speech をとりません。talk about … の形で使います。"
+        },
+        {
+          "t": "tell",
+          "why": "tell は tell a story / tell the truth。speech とは組みません。"
+        }
+      ],
+      "explain": "スピーチをするは give a speech（presentation と同じ give）。deliver a speech とも言います。",
+      "review": true
+    },
+    {
+      "id": "q04",
+      "label": "一回できたことの could",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "The concert tickets sold out in ten minutes, but I [[could get]] two seats for my wife and me.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "その時一回うまくいったことに could は使いません。could は「（いつでも）できた」という能力の話です。"
+        },
+        {
+          "t": "can get",
+          "why": "過去の話なので現在形 can は合いません。"
+        },
+        {
+          "t": "could got",
+          "why": "could のあとは動詞の原形です。"
+        },
+        {
+          "t": "managed to get",
+          "ok": true
+        }
+      ],
+      "explain": "一回できたことは managed to get。was able to get や単に got でも言えます。",
+      "review": true
+    },
+    {
+      "id": "q05",
+      "label": "although と but の重ね",
+      "scene": "ニュース",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "Although the new train line to the airport is fast, [[but the tickets]] are still too expensive for many students.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "although で始めたので、後ろに but は付けません。"
+        },
+        {
+          "t": "however the tickets",
+          "why": "however も「しかし」なので although と重なります。"
+        },
+        {
+          "t": "the tickets",
+          "ok": true
+        },
+        {
+          "t": "and the tickets",
+          "why": "although の節のあとに and でつなぐ形はありません。"
+        }
+      ],
+      "explain": "although か but のどちらか一方だけ。The new train line is fast, but the tickets are … でも言えます。",
+      "review": true
+    },
+    {
+      "id": "q06",
+      "label": "語と前置詞の組み合わせ",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "At the end of the webinar, the speaker [[answered to]] questions from the audience for about ten minutes.",
+      "options": [
+        {
+          "t": "answered",
+          "ok": true
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "answer は前置詞なしで目的語をとります。answer to … とは言いません。"
+        },
+        {
+          "t": "answered for",
+          "why": "answer for は「〜の責任を取る」。質問に答える意味にはなりません。"
+        },
+        {
+          "t": "answered about",
+          "why": "answer about という組み合わせで質問を目的語にはとりません。"
+        }
+      ],
+      "explain": "質問に答えるは answer questions（前置詞なし）。名詞なら an answer to the question と to が付きます。",
+      "review": true
+    },
+    {
+      "id": "q07",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Excuse me, I need a, ___, a cable that connects my laptop to the TV.",
+      "options": [
+        {
+          "t": "what do you call it",
+          "ok": true
+        },
+        {
+          "t": "how to say",
+          "why": "how to say は文の一部（I don't know how to say it）で、単独のつなぎ言葉にはなりません。"
+        },
+        {
+          "t": "how do you call it",
+          "why": "「何と呼ぶか」は what で聞きます。how do you call it とは言いません。"
+        },
+        {
+          "t": "what to say",
+          "why": "what to say は「何を言うべきか」。名前が出てこないときのつなぎにはなりません。"
+        }
+      ],
+      "explain": "名前が出てこないときは what do you call it / what's the word。英語で何と言うかを聞くなら How do you say … in English? です。",
+      "review": true
+    },
+    {
+      "id": "q08",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "下線部の直し方は？",
+      "stem": "I'm going to the farmers market on Saturday morning [[whichever it rains or not]].",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "whichever は「どちらの〜でも」（whichever you choose）。後ろに文＋ or not は続きません。"
+        },
+        {
+          "t": "either it rains or not",
+          "why": "either A or B は語句を並べる形。文＋ or not で「〜でも〜でも」にはなりません。"
+        },
+        {
+          "t": "even it rains or not",
+          "why": "even は「〜でさえ」。even if it rains（雨が降っても）なら言えますが、or not とは組みません。"
+        },
+        {
+          "t": "whether it rains or not",
+          "ok": true
+        }
+      ],
+      "explain": "「〜かどうかに関わらず」は whether … or not。whether or not it rains の順でも言えます。",
+      "review": true
+    },
+    {
+      "id": "q09",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "There were so many comments on the pull request that I ___ which ones I had already fixed.",
+      "options": [
+        {
+          "t": "lost",
+          "why": "lose のあとに which ones … のような節は続きません。「分からなくなる」は lose track of。"
+        },
+        {
+          "t": "lost track of",
+          "ok": true
+        },
+        {
+          "t": "kept track of",
+          "why": "keep track of は「把握しておく」。コメントが多すぎて困った話と逆の意味になります。"
+        },
+        {
+          "t": "missed",
+          "why": "miss のあとに which ones … の節は続きません。"
+        }
+      ],
+      "explain": "「（どこまでやったか）分からなくなる」は lose track of。I lost track of what to do next. と同じ形です。",
+      "review": true
+    },
+    {
+      "id": "q10",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "In the US, ___ should I say when a stranger sneezes next to me?",
+      "options": [
+        {
+          "t": "how",
+          "why": "say は「何を」言うかが要る動詞です。how を使うなら How should I say it? と it を付けます。"
+        },
+        {
+          "t": "where",
+          "why": "say の目的語（何を言うか）が抜けたままになります。"
+        },
+        {
+          "t": "what",
+          "ok": true
+        },
+        {
+          "t": "why",
+          "why": "say の目的語（何を言うか）が抜けたままになります。"
+        }
+      ],
+      "explain": "「何と言えばいい？」は What should I say? 答えは Bless you. です。",
+      "review": true
+    },
+    {
+      "id": "q11",
+      "label": "こう言うのが自然",
+      "scene": "レッスン",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（このレッスンのあと、トレーダージョーズに買い出しに行きます）",
+      "options": [
+        {
+          "t": "After this lesson, I'm going to go grocery shopping at Trader Joe's.",
+          "ok": true
+        },
+        {
+          "t": "After this lesson, I'm going to go to grocery shopping at Trader Joe's.",
+          "why": "go shopping の形では to を入れません（go to shopping とは言いません）。"
+        },
+        {
+          "t": "After this lesson, I'm going to go grocery shop at Trader Joe's.",
+          "why": "go のあとは -ing（go shopping / go hiking）です。"
+        },
+        {
+          "t": "After this lesson, I'm going to go grocery shopping to Trader Joe's.",
+          "why": "買い出しをする場所の前は to ではなく at です（go shopping at …）。"
+        }
+      ],
+      "explain": "「買い出しに行く」は go grocery shopping。店は at Trader Joe's で後ろに付けます。",
+      "review": true
+    },
+    {
+      "id": "q12",
+      "label": "こう言うのが自然",
+      "scene": "レッスン",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "That sounds like a fun weekend. Thanks for ___!",
+      "options": [
+        {
+          "t": "your introduction",
+          "why": "introduction は自己紹介や人の紹介。相手が週末の話をしてくれたあとには使いません。"
+        },
+        {
+          "t": "introducing",
+          "why": "introduce は「紹介する」で、何を紹介したかが要ります。話をしてくれたお礼にはなりません。"
+        },
+        {
+          "t": "share",
+          "why": "for のあとは -ing 形（sharing）にします。share のままでは使えません。"
+        },
+        {
+          "t": "sharing",
+          "ok": true
+        }
+      ],
+      "explain": "相手が自分の話をしてくれたら Thanks for sharing! レッスンの雑談のあとにそのまま言えます。",
+      "review": true
+    }
+  ]
+}
