@@ -1,0 +1,450 @@
+{
+  "id": "2026-10-23-lesson",
+  "kind": "lesson",
+  "set_hash": "14e7f46e9e06dd6481c2d47dc7ea05d4812cedda4f566fbe19179591804305d9",
+  "notes": [
+    {
+      "tag": "言い方",
+      "title": "「できるだけ」の言い方",
+      "rule": "「できるだけ」は as much as I can / as often as possible。as と as の間に、何をできるだけするかの語を入れる",
+      "why": [
+        "日本語の「できるだけ」を possible と can の両方で訳すと、as possible as I can のように混ざってしまう",
+        "英語は as ◯◯ as のかたちで、◯◯に程度（much）・頻度（often）・速さ（soon）などを入れる",
+        "as ... as I can と as ... as possible のどちらか一方で終える"
+      ],
+      "examples": [
+        {
+          "bad": "I walk as possible as I can."
+        },
+        {
+          "good": "I walk **as much as** I can."
+        },
+        {
+          "good": "I try to call my parents **as often as possible**."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "赤信号で右折",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "In most US states, you can ___ after a full stop, unless a sign says no.",
+      "options": [
+        {
+          "t": "right turn the red",
+          "why": "right turn は名詞で、この並べ方は文として成り立ちません。"
+        },
+        {
+          "t": "turn the red light",
+          "why": "「赤信号を回す」という意味になってしまいます。"
+        },
+        {
+          "t": "turn right on red",
+          "ok": true
+        },
+        {
+          "t": "turn red to right",
+          "why": "赤信号の右折をこの語順では言いません。"
+        }
+      ],
+      "explain": "「赤信号で右折する」は turn right on red と決まった言い方。",
+      "review": false
+    },
+    {
+      "id": "q02",
+      "label": "左側通行",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "In the UK, people [[drive left side]], and in the US they drive on the right.",
+      "options": [
+        {
+          "t": "drive at left side",
+          "why": "前置詞は at ではなく on です。"
+        },
+        {
+          "t": "drive in left side",
+          "why": "in left side は冠詞が抜けた崩れた形で、決まった言い方は drive on the left。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "on が抜けています。左側を走るは drive on the left。"
+        },
+        {
+          "t": "drive on the left",
+          "ok": true
+        }
+      ],
+      "explain": "「左側を走る」は drive on the left。on を落とさず、the left / the right で言います。",
+      "review": false
+    },
+    {
+      "id": "q03",
+      "label": "手伝おうかと声をかける",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "A clerk at the hardware store ___ when I looked lost.",
+      "options": [
+        {
+          "t": "talked me to help",
+          "why": "talk は「話しかける」。「手伝おうか」と申し出る意味になりません。"
+        },
+        {
+          "t": "offered to help me",
+          "ok": true
+        },
+        {
+          "t": "said me to help",
+          "why": "say に人を直接つなげません。意味も合いません。"
+        },
+        {
+          "t": "offered helping me",
+          "why": "offer のあとは to 不定詞です（offered to help）。"
+        }
+      ],
+      "explain": "「手伝おうかと声をかける」は offer to help。Can I help you? と声をかけた、という場面にも使えます。",
+      "review": false
+    },
+    {
+      "id": "q04",
+      "label": "ドアを押さえる",
+      "scene": "生活",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（後ろの女性のためにドアを押さえた）",
+      "options": [
+        {
+          "t": "I kept the woman behind me the door.",
+          "why": "keep に人とドアを並べる形はありません。"
+        },
+        {
+          "t": "I held up the door at the woman behind me.",
+          "why": "hold up は「持ち上げる・遅らせる」で、at も合いません。"
+        },
+        {
+          "t": "I held the door for the woman behind me.",
+          "ok": true
+        },
+        {
+          "t": "I held the door to the woman behind me.",
+          "why": "人のためには for。to だと向きが違います。"
+        }
+      ],
+      "explain": "人のためにドアを押さえるのは hold the door for someone。",
+      "review": false
+    },
+    {
+      "id": "q05",
+      "label": "胸焼けと胃の不調",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "After the spicy pizza, I got ___ and an upset stomach.",
+      "options": [
+        {
+          "t": "burning of chest",
+          "why": "症状名として使わない言い方です。"
+        },
+        {
+          "t": "heartburn",
+          "ok": true
+        },
+        {
+          "t": "a chest burn",
+          "why": "chest burn という言い方はありません。"
+        },
+        {
+          "t": "a burn of my heart",
+          "why": "「心臓のやけど」に聞こえてしまいます。"
+        }
+      ],
+      "explain": "胸焼けは heartburn、胃のむかつきは an upset stomach。",
+      "review": false
+    },
+    {
+      "id": "q06",
+      "label": "慣れている途中",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I joined the team last week, so I'm still ___ the new tools.",
+      "options": [
+        {
+          "t": "getting use to",
+          "why": "used to と書きます（use ではなく used）。"
+        },
+        {
+          "t": "get used to",
+          "why": "I'm のあとは getting（I'm still getting used to）です。"
+        },
+        {
+          "t": "getting used to",
+          "ok": true
+        },
+        {
+          "t": "on the way to be accustomed to",
+          "why": "on the way は「移動の途中」の意味。慣れる途中は still getting used to。"
+        }
+      ],
+      "explain": "「慣れる途中」は still getting used to。to のあとは名詞か -ing。",
+      "review": false
+    },
+    {
+      "id": "q07",
+      "label": "「〜だと伝える」",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "When I ___ I'm from Canada, they asked me about hockey.",
+      "options": [
+        {
+          "t": "introduced",
+          "why": "introduce は人を紹介する語で、「〜だと伝える」にはなりません。"
+        },
+        {
+          "t": "said them",
+          "why": "say は人を直接目的語にしません（said to them / told them）。"
+        },
+        {
+          "t": "introduced them that",
+          "why": "introduce に that 節はつなげません。"
+        },
+        {
+          "t": "told them",
+          "ok": true
+        }
+      ],
+      "explain": "「〜だと伝える」は tell 人 that …。introduce は人を紹介するときの語。",
+      "review": false
+    },
+    {
+      "id": "q08",
+      "label": "「最近」と these days",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I'm pretty busy at work ___.",
+      "options": [
+        {
+          "t": "recent",
+          "why": "recent は形容詞で、文末の副詞になりません。"
+        },
+        {
+          "t": "these days",
+          "ok": true
+        },
+        {
+          "t": "in recent",
+          "why": "in recent は形が崩れています。"
+        },
+        {
+          "t": "since recently",
+          "why": "since のあとに recently は置けません。今の状態の「最近」は these days で言います。"
+        }
+      ],
+      "explain": "今の状態の「最近」は these days / lately。",
+      "review": true
+    },
+    {
+      "id": "q09",
+      "label": "比較の more",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "This laptop has ___ memory than my old one.",
+      "options": [
+        {
+          "t": "much",
+          "why": "than とつなぐ比較では much ではなく more を使います。"
+        },
+        {
+          "t": "many",
+          "why": "memory は数えない名詞なので many は使えません。"
+        },
+        {
+          "t": "more",
+          "ok": true
+        },
+        {
+          "t": "most",
+          "why": "most は「いちばん」。than とは組みません。"
+        }
+      ],
+      "explain": "than で比べるときは more を比べる語の前に置く。more memory than …",
+      "review": true
+    },
+    {
+      "id": "q10",
+      "label": "「最近」と recently",
+      "scene": "学習",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I [[recently started]] jogging before work.",
+      "options": [
+        {
+          "t": "these days started",
+          "why": "these days は過去形の started とは組みません。"
+        },
+        {
+          "t": "started recently since",
+          "why": "since の使い方が崩れています。"
+        },
+        {
+          "t": "recently start",
+          "why": "過去に始めたことなので start ではなく started です。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        }
+      ],
+      "explain": "recently は過去形と組めます（recently started）。今の習慣に使うと崩れるので、使い分けが大事です。",
+      "review": true
+    },
+    {
+      "id": "q11",
+      "label": "比較の more",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Fort Collins gets [[more snow]] than Denver.",
+      "options": [
+        {
+          "t": "more of snow",
+          "why": "of を入れると不自然になります。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "much snow",
+          "why": "than と組むなら much ではなく more です。"
+        },
+        {
+          "t": "snow more",
+          "why": "more は比べる語の前に置きます。"
+        }
+      ],
+      "explain": "more snow than … で正しい文です。",
+      "review": true
+    },
+    {
+      "id": "q12",
+      "label": "enjoy の目的語",
+      "scene": "生活",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（レッスンが楽しかったと伝える）",
+      "options": [
+        {
+          "t": "I really enjoyed me.",
+          "why": "「私自身を楽しんだ」の意味になってしまいます。"
+        },
+        {
+          "t": "I really enjoyed.",
+          "why": "enjoy には目的語が要ります。"
+        },
+        {
+          "t": "I really enjoyed to it.",
+          "why": "enjoy のあとに to は付けません。"
+        },
+        {
+          "t": "I really enjoyed it.",
+          "ok": true
+        }
+      ],
+      "explain": "enjoy には目的語が要る。enjoyed it / enjoyed talking with you。",
+      "review": false
+    },
+    {
+      "id": "q13",
+      "label": "「できるだけ」",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I try to cook at home ___ I can.",
+      "options": [
+        {
+          "t": "so much as",
+          "why": "so much as は別の言い方で、「できるだけ」にはなりません。"
+        },
+        {
+          "t": "as much like",
+          "why": "like では「できるだけ」になりません。"
+        },
+        {
+          "t": "as much as",
+          "ok": true
+        },
+        {
+          "t": "as possible as",
+          "why": "as possible as I can とは言いません。"
+        }
+      ],
+      "explain": "「できるだけ」は as much as I can。何を「できるだけ」するかを as と as の間に入れます。",
+      "review": false
+    },
+    {
+      "id": "q14",
+      "label": "「できるだけ」",
+      "scene": "学習",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（できるだけ頻繁に連絡します）",
+      "options": [
+        {
+          "t": "I'll keep in touch as possible as often I can.",
+          "why": "as と as の間に often を入れます。"
+        },
+        {
+          "t": "I'll keep in touch as often as possible I can.",
+          "why": "as often as possible のあとに I can は続けません。"
+        },
+        {
+          "t": "I'll keep in touch as often as I can.",
+          "ok": true
+        },
+        {
+          "t": "I'll keep in touch as often possible as I can.",
+          "why": "possible と I can を並べて使えません。"
+        }
+      ],
+      "explain": "as often as I can / as often as possible のどちらかで言います。as much as I can と同じ型です。",
+      "review": false
+    },
+    {
+      "id": "q15",
+      "label": "〜にしては",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "It was pretty good ___ a Japanese restaurant in a small town.",
+      "options": [
+        {
+          "t": "to",
+          "why": "good to では「〜にしては」になりません。"
+        },
+        {
+          "t": "with",
+          "why": "good with は「〜が得意」の意味になります。"
+        },
+        {
+          "t": "of",
+          "why": "good of は「親切な」などの別の意味になります。"
+        },
+        {
+          "t": "for",
+          "ok": true
+        }
+      ],
+      "explain": "「〜にしては」は for。good for a ...",
+      "review": false
+    }
+  ]
+}
