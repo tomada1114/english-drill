@@ -1,0 +1,378 @@
+{
+  "id": "2026-10-23",
+  "kind": "morning",
+  "set_hash": "211992d87a89d8edec885a0ba91eb79320061532f2e9c89bc1c7c89ac02c4c3b",
+  "notes": [
+    {
+      "tag": "文法",
+      "title": "although のあとに but を重ねない",
+      "rule": "although で始めたら、後ろに but を付けない。どちらか一方だけでつなぐ",
+      "why": [
+        "日本語の「〜だけど、…」は逆接が前後に 1 回ずつ出ても気にならない",
+        "英語は although か but のどちらか 1 つで逆接が完成する"
+      ],
+      "examples": [
+        {
+          "bad": "Although it's small, but it's comfortable."
+        },
+        {
+          "good": "Although it's small, it's comfortable. / It's small, **but** it's comfortable."
+        }
+      ]
+    },
+    {
+      "tag": "表現",
+      "title": "今の習慣の「最近」は these days",
+      "rule": "今の習慣は these days / lately。recently は過去形か現在完了といっしょに使う",
+      "why": [
+        "recently は「少し前に起きたこと」を指す語で、いつもの習慣には合わない"
+      ],
+      "examples": [
+        {
+          "bad": "I wake up at 6 a.m. recently."
+        },
+        {
+          "good": "I wake up at 6 a.m. **these days**. / I **recently started** waking up at 6 a.m."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "although と but の重ね",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Although the new coffee shop near my apartment is small, [[but it]] always has great music.",
+      "options": [
+        {
+          "t": "（このままでよい）",
+          "why": "Although と but が重なっています。どちらか一方だけにします。"
+        },
+        {
+          "t": "it",
+          "ok": true
+        },
+        {
+          "t": "and it",
+          "why": "逆接の although のあとに and を置くと意味がつながりません。"
+        },
+        {
+          "t": "so it",
+          "why": "so は「だから」で、although の逆接と合いません。"
+        }
+      ],
+      "explain": "Although で始めたら、後ろは it always has … と but なしで続けます。Although をやめて ..., but it … でも言えます。",
+      "review": true
+    },
+    {
+      "id": "q02",
+      "label": "more の位置",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "After I switched to a standing desk, I feel ___ at the end of the workday.",
+      "options": [
+        {
+          "t": "relaxed more",
+          "why": "more は文末に置かず、形容詞の前に置きます。"
+        },
+        {
+          "t": "relax more",
+          "why": "feel のあとは形容詞です。動詞 relax は入りません。"
+        },
+        {
+          "t": "more relaxed",
+          "ok": true
+        },
+        {
+          "t": "much relaxed",
+          "why": "「より〜」は much ではなく more で作ります。"
+        }
+      ],
+      "explain": "「より〜だ」は more ＋ 形容詞。feel more relaxed の順です。",
+      "review": true
+    },
+    {
+      "id": "q03",
+      "label": "過去の話の時制",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Last winter, we drove to Estes Park for a day trip. The road [[is]] icy, so my wife drove slowly.",
+      "options": [
+        {
+          "t": "was",
+          "ok": true
+        },
+        {
+          "t": "has been",
+          "why": "現在完了は今につながる話です。過去の出来事の続きは過去形で通します。"
+        },
+        {
+          "t": "will be",
+          "why": "未来の形です。話は過去のことです。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "話は Last winter のことなので、is は過去形に戻します。"
+        }
+      ],
+      "explain": "過去の話を始めたら、状況の説明も過去形（was）で通します。",
+      "review": true
+    },
+    {
+      "id": "q04",
+      "label": "「最近」と recently",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "I [[recently moved]] to a smaller apartment, so I'm still unpacking.",
+      "options": [
+        {
+          "t": "recently move",
+          "why": "過去の出来事なので過去形 moved のままです。"
+        },
+        {
+          "t": "these days moved",
+          "why": "these days は今の習慣に使う語で、過去形とは合いません。"
+        },
+        {
+          "t": "nowadays moved",
+          "why": "nowadays も今の状態に使う語で、過去形とは合いません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        }
+      ],
+      "explain": "recently は「少し前に起きたこと」に使う語なので、過去形の moved といっしょで正しい文です。",
+      "review": true
+    },
+    {
+      "id": "q05",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "I need a, ___, the tool for opening wine bottles.",
+      "options": [
+        {
+          "t": "how to say",
+          "why": "how to say は I don't know how to say this のように文の中で使う形で、つなぎ言葉にはなりません。"
+        },
+        {
+          "t": "what's the word",
+          "ok": true
+        },
+        {
+          "t": "what I say",
+          "why": "つなぎ言葉として使われない形です。"
+        },
+        {
+          "t": "how say I",
+          "why": "語順が崩れています。"
+        }
+      ],
+      "explain": "単語が出てこないときのつなぎは what's the word / what do you call it。",
+      "review": true
+    },
+    {
+      "id": "q06",
+      "label": "数えない名詞",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Before the road trip, my brother gave me ___ about the mountain passes.",
+      "options": [
+        {
+          "t": "some useful information",
+          "ok": true
+        },
+        {
+          "t": "some useful informations",
+          "why": "information は数えないので -s は付きません。"
+        },
+        {
+          "t": "a useful information",
+          "why": "数えない名詞に a は付きません。"
+        },
+        {
+          "t": "many useful information",
+          "why": "many は数えられる名詞に使います。"
+        }
+      ],
+      "explain": "information は数えない名詞。量は some / a lot of ＋ そのままの形で言います。",
+      "review": true
+    },
+    {
+      "id": "q07",
+      "label": "こう言うのが自然",
+      "scene": "ニュース",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（この口コミは、いつも当てになるとは限らない）",
+      "options": [
+        {
+          "t": "This review might not be always reliable.",
+          "why": "always は be の前に置きます。"
+        },
+        {
+          "t": "This review always might not be reliable.",
+          "why": "always の位置が離れすぎて、「いつも信頼できない」に聞こえます。"
+        },
+        {
+          "t": "This review might not always be reliable.",
+          "ok": true
+        },
+        {
+          "t": "This review might be not always reliable.",
+          "why": "not は might のあとに置き、always は be の前に置きます。"
+        }
+      ],
+      "explain": "「いつも〜とは限らない」は might not always be。always は be の前です。",
+      "review": true
+    },
+    {
+      "id": "q08",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Does listening to rain sounds help ___ at night?",
+      "options": [
+        {
+          "t": "to sleeping",
+          "why": "help のあとに to ＋ -ing は付きません。"
+        },
+        {
+          "t": "you sleeping",
+          "why": "help のあとは -ing ではなく動詞の原形です。"
+        },
+        {
+          "t": "you slept",
+          "why": "help のあとは過去形ではなく動詞の原形です。"
+        },
+        {
+          "t": "you sleep",
+          "ok": true
+        }
+      ],
+      "explain": "help のあとは 人＋動詞の原形（help you sleep）。",
+      "review": true
+    },
+    {
+      "id": "q09",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "On Saturday mornings, we usually go ___ at Sprouts before it gets crowded.",
+      "options": [
+        {
+          "t": "grocery shopping",
+          "ok": true
+        },
+        {
+          "t": "to grocery shopping",
+          "why": "go のあとに to は付けません。"
+        },
+        {
+          "t": "shopping grocery",
+          "why": "語順が逆です。"
+        },
+        {
+          "t": "to buy grocery",
+          "why": "「食料品」は groceries と複数で言い、この形では不自然です。"
+        }
+      ],
+      "explain": "「買い出しに行く」は go grocery shopping。",
+      "review": true
+    },
+    {
+      "id": "q10",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（同僚が退職すると聞いた。何と声をかければいいか迷っている）",
+      "options": [
+        {
+          "t": "How should I say to him?",
+          "why": "how だと「どんな方法で」になります。「何と」は what です。"
+        },
+        {
+          "t": "What should I say him?",
+          "why": "say のあとの相手には to が必要です。"
+        },
+        {
+          "t": "What should I say to him?",
+          "ok": true
+        },
+        {
+          "t": "How I should say to him?",
+          "why": "疑問文は助動詞が先に来ます。"
+        }
+      ],
+      "explain": "「何と言えば」は What should I say? 相手を足すなら to him。",
+      "review": true
+    },
+    {
+      "id": "q11",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Our rent went up by 20 percent this year, ___ a lot for a small apartment.",
+      "options": [
+        {
+          "t": "so is",
+          "why": "so is は「〜もそうだ」の意味で、感想を足す形ではありません。"
+        },
+        {
+          "t": "what is",
+          "why": "what is では前の内容を受けられません。"
+        },
+        {
+          "t": "that is",
+          "why": "コンマのあとで前の内容を受けるのは which です。"
+        },
+        {
+          "t": "which is",
+          "ok": true
+        }
+      ],
+      "explain": "感想を後ろに足すときは , which is … でつなぎます。",
+      "review": true
+    },
+    {
+      "id": "q12",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Making a cup of tea is my ___ that the workday has started.",
+      "options": [
+        {
+          "t": "switch",
+          "why": "switch のあとに that 節は続けにくく、「合図」の意味でも自然ではありません。"
+        },
+        {
+          "t": "mark",
+          "why": "mark は「印・点数」で、「合図」の意味では使いません。"
+        },
+        {
+          "t": "button",
+          "why": "button は物のボタンで、「合図」の意味にはなりません。"
+        },
+        {
+          "t": "signal",
+          "ok": true
+        }
+      ],
+      "explain": "「〜の合図」は signal that … で中身を言います。",
+      "review": true
+    }
+  ]
+}

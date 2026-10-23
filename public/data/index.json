@@ -1,5 +1,11 @@
 [
   {
+    "id": "2026-10-23",
+    "kind": "morning",
+    "questions": 12,
+    "notes": 2
+  },
+  {
     "id": "2026-10-22-lesson",
     "kind": "lesson",
     "questions": 11,
