@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readdir, readFile } from 'node:fs/promises';
-import { FORMAT, validateSet, choose, result, clipboardText, restoreAnswers, rich, stem } from '../public/core.js';
+import { FORMAT, validateSet, choose, result, clipboardText, restoreAnswers, retryPending, nextRetry, restoreCleared, rich, stem } from '../public/core.js';
 
 const sample = () => ({ id: '2026-10-20', set_hash: 'a'.repeat(64), notes: [], questions: [1,2].map(i => ({ id: `q0${i}`, options: [{ t: 'right', ok: true }, { t: 'wrong', why: 'No' }, { t: 'three' }, { t: 'four' }] })) });
 test('a first answer stays immutable and copy matches the importer contract', () => {
@@ -55,4 +55,32 @@ test('every public snapshot is valid and a complete result can be copied', async
     }
     assert.equal(Object.keys(result(s, answers).answers).length, row.questions);
   }
+});
+
+const three = () => ({ ...sample(), questions: [1,2,3].map(i => ({ id: `q0${i}`, options: [{ t: 'right', ok: true }, { t: 'wrong' }, { t: 'three' }, { t: 'four' }] })) });
+test('missed questions come back at the end until each is answered correctly', () => {
+  const s = three();
+  const a = ['q01', 'q02', 'q03'].reduce((a, id, i) => choose(s, a, id, i === 1 ? 0 : 1), {});
+  assert.deepEqual(retryPending(s, a, []), ['q01', 'q03']);
+  assert.equal(nextRetry(s, a, []), 'q01');
+  // a wrong retry keeps q01 pending and moves on to the next missed question
+  assert.equal(nextRetry(s, a, [], 'q01'), 'q03');
+  assert.equal(nextRetry(s, a, ['q03'], 'q03'), 'q01');
+  assert.equal(nextRetry(s, a, ['q01'], 'q01'), 'q03');
+  assert.equal(nextRetry(s, a, ['q01', 'q03']), null);
+});
+test('retries never change the first answers or the copied result', () => {
+  const s = three();
+  const a = ['q01', 'q02', 'q03'].reduce((a, id) => choose(s, a, id, id === 'q02' ? 1 : 0), {});
+  const before = clipboardText(s, a);
+  assert.deepEqual(retryPending(s, a, ['q02']), []);
+  assert.equal(clipboardText(s, a), before);
+  assert.match(before, /2 \/ 3 問正解。間違えた問題: Q2/);
+  assert.equal(result(s, a).answers.q02.chosen, 'wrong');
+});
+test('restored retry progress keeps only first-pass misses', () => {
+  const s = three();
+  const a = choose(s, {}, 'q01', 1);
+  assert.deepEqual(restoreCleared(s, a, ['q01', 'q02', 'zz', 3]), ['q01']);
+  assert.deepEqual(restoreCleared(s, a, 'bad'), []);
 });

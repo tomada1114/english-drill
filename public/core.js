@@ -34,6 +34,22 @@ export function restoreAnswers(data, saved) {
   return answers;
 }
 
+// Retries replay first-pass misses at the end; they never touch `answers`, so the copied result keeps the first choice.
+export function retryPending(data, answers, cleared) {
+  return data.questions.filter(q => answers[q.id] && !answers[q.id].correct && !cleared.includes(q.id)).map(q => q.id);
+}
+export function nextRetry(data, answers, cleared, after = null) {
+  const pending = retryPending(data, answers, cleared);
+  if (!pending.length) return null;
+  const order = data.questions.map(q => q.id), from = after ? order.indexOf(after) : -1;
+  return pending.find(id => order.indexOf(id) > from) ?? pending[0];
+}
+export function restoreCleared(data, answers, saved) {
+  if (!Array.isArray(saved)) return [];
+  const missed = retryPending(data, answers, []);
+  return missed.filter(id => saved.includes(id));
+}
+
 export function result(data, answers) {
   const checked = restoreAnswers(data, { set_hash: data.set_hash, answers });
   if (Object.keys(checked).length !== data.questions.length) throw new Error('全問答えてから結果をコピーしてください。');
