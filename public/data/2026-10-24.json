@@ -1,0 +1,395 @@
+{
+  "id": "2026-10-24",
+  "kind": "morning",
+  "set_hash": "d970dc07e0ec7821a40f1ea7eb74ce67b783c64aa4598d33db8477a16d88c2b6",
+  "notes": [
+    {
+      "tag": "表現",
+      "title": "「できるだけ」は as much as I can",
+      "rule": "「できるだけ」は as much as I can / as often as possible。as と as の間に、何をできるだけするかの語を入れる",
+      "why": [
+        "as possible と as I can を同時に言うと、「できるだけ」が二重になる",
+        "as ○ as の ○ には much / often / soon など、程度を表す語が入る"
+      ],
+      "examples": [
+        {
+          "bad": "I walk as possible as I can."
+        },
+        {
+          "good": "I walk **as much as** I can. / I walk **as much as possible**."
+        }
+      ]
+    },
+    {
+      "tag": "文法",
+      "title": "比べるときの more は形容詞・名詞の前",
+      "rule": "「より〜」は more ＋ 形容詞・名詞 ＋ than。much や文末の more では作らない",
+      "why": [
+        "much は程度を強める語で、「より」の意味は持たない",
+        "more は比べる語の直前に置く"
+      ],
+      "examples": [
+        {
+          "bad": "I feel tired more than yesterday."
+        },
+        {
+          "good": "I feel **more** tired than yesterday. / It has **more** memory than my old one."
+        }
+      ]
+    },
+    {
+      "tag": "表現",
+      "title": "言葉を探す間は what's the word / how should I put it",
+      "rule": "単語が出てこないとき、間をつなぐのは what's the word / what do you call it。言い方を探すときは how should I put it",
+      "why": [
+        "how to say は I don't know how to say this のように文の中で使う形で、つなぎ言葉ではない"
+      ],
+      "examples": [
+        {
+          "bad": "I need a, how to say, charger."
+        },
+        {
+          "good": "I need a, **what's the word**, charger."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "label": "「できるだけ」",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "On busy days, I try to walk to work ___ I can.",
+      "options": [
+        {
+          "t": "as possible as",
+          "why": "as possible と as I can が混ざっています。as ○ as I can の形にします。"
+        },
+        {
+          "t": "as many as",
+          "why": "many は数えられるものに使う語で、walk（歩く）には合いません。"
+        },
+        {
+          "t": "as much as",
+          "ok": true
+        },
+        {
+          "t": "so much as",
+          "why": "「できるだけ」は so ではなく as ○ as で作ります。"
+        }
+      ],
+      "explain": "「できるだけ歩く」は walk as much as I can。as much as possible とも言えます。",
+      "review": true
+    },
+    {
+      "id": "q02",
+      "label": "more の位置",
+      "scene": "仕事",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "My new phone has [[more storage]] than my old one.",
+      "options": [
+        {
+          "t": "storage more",
+          "why": "more は名詞の前に置きます。下線部は正しい語順です。"
+        },
+        {
+          "t": "much storage",
+          "why": "much では「より多い」になりません。下線部のままで比べられます。"
+        },
+        {
+          "t": "（このままでよい）",
+          "ok": true
+        },
+        {
+          "t": "most storage",
+          "why": "most は「いちばん多い」で、than とは合いません。"
+        }
+      ],
+      "explain": "more ＋ 名詞 ＋ than の形で、下線部は正しい文です。直しすぎないことも大事です。",
+      "review": true
+    },
+    {
+      "id": "q03",
+      "label": "言葉を探すときのつなぎ",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "My teammate is, ___, very particular about naming variables.",
+      "options": [
+        {
+          "t": "how to say",
+          "why": "how to say は I don't know how to say this のように文の中で使う形で、つなぎ言葉にはなりません。"
+        },
+        {
+          "t": "how should I put it",
+          "ok": true
+        },
+        {
+          "t": "what I say",
+          "why": "つなぎ言葉として使われない形です。"
+        },
+        {
+          "t": "how say I",
+          "why": "語順が崩れています。"
+        }
+      ],
+      "explain": "言い方を探すときのつなぎは how should I put it。単語を探すなら what's the word / what do you call it。",
+      "review": true
+    },
+    {
+      "id": "q04",
+      "label": "こう言うのが自然",
+      "scene": "仕事",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "She will take the job ___ the salary goes up or not.",
+      "options": [
+        {
+          "t": "whichever",
+          "why": "whichever は「どちらでも」と選ぶ語で、or not とはつながりません。"
+        },
+        {
+          "t": "whatever",
+          "why": "whatever のあとは名詞や文が続き、「〜かどうか」にはなりません。"
+        },
+        {
+          "t": "however",
+          "why": "however は「しかし」「どんなに〜でも」で、「〜かどうか」ではありません。"
+        },
+        {
+          "t": "whether",
+          "ok": true
+        }
+      ],
+      "explain": "「〜かどうかに関わらず」は whether … or not。",
+      "review": true
+    },
+    {
+      "id": "q05",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "When my neighbor's dog starts barking, it's my ___ that it's almost 6 p.m.",
+      "options": [
+        {
+          "t": "signal",
+          "ok": true
+        },
+        {
+          "t": "switch",
+          "why": "switch は電源のスイッチ。「合図」の意味では signal を使います。"
+        },
+        {
+          "t": "change of",
+          "why": "change of のあとに that 節は続きません。"
+        },
+        {
+          "t": "mark of",
+          "why": "mark of のあとに that 節は続きません。"
+        }
+      ],
+      "explain": "「〜の合図」は my signal that … で中身を続けます。",
+      "review": true
+    },
+    {
+      "id": "q06",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "My roommate eats dinner at 10 p.m., ___ really late for me.",
+      "options": [
+        {
+          "t": "which is",
+          "ok": true
+        },
+        {
+          "t": "so",
+          "why": "so は「だから」で、感想を足すつなぎにはなりません。"
+        },
+        {
+          "t": "what is",
+          "why": "what is では前の文とつながりません。"
+        },
+        {
+          "t": "it is",
+          "why": "コンマだけで文を 2 つつなぐことになり、不自然です。"
+        }
+      ],
+      "explain": "感想を後ろに足すときは , which is … でつなぎます。",
+      "review": true
+    },
+    {
+      "id": "q07",
+      "label": "こう言うのが自然",
+      "scene": "地域",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "My neighbor just lost her grandfather. I don't know ___.",
+      "options": [
+        {
+          "t": "how should I say to her",
+          "why": "名詞節の中は平叙文の語順にします。また「何と言うか」なので how ではなく what を使います。"
+        },
+        {
+          "t": "how to say her",
+          "why": "say のあとに人は直接続けられません。"
+        },
+        {
+          "t": "what to say to her",
+          "ok": true
+        },
+        {
+          "t": "what say to her",
+          "why": "to が抜けています。what to say の形にします。"
+        }
+      ],
+      "explain": "「何と言えばいいか」は what to say。how を使うなら how to say it と it を付けます。",
+      "review": true
+    },
+    {
+      "id": "q08",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "gap",
+      "ask": "空所に入るものは？",
+      "stem": "Does a warm shower help ___ better at night?",
+      "options": [
+        {
+          "t": "you sleeping",
+          "why": "help のあとは「人＋動詞の原形」です。-ing 形にはしません。"
+        },
+        {
+          "t": "to sleep you",
+          "why": "人が to sleep の後ろに回っています。"
+        },
+        {
+          "t": "sleep you",
+          "why": "人（you）が動詞の前に来ます。"
+        },
+        {
+          "t": "you sleep",
+          "ok": true
+        }
+      ],
+      "explain": "help のあとは 人＋動詞の原形。help you sleep と言います。",
+      "review": true
+    },
+    {
+      "id": "q09",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "At the party, I [[introduced that I work in software]].",
+      "options": [
+        {
+          "t": "said them I work in software",
+          "why": "say のあとに人は直接続けられません。tell なら人を直接続けられます。"
+        },
+        {
+          "t": "told them I work in software",
+          "ok": true
+        },
+        {
+          "t": "introduced them I work in software",
+          "why": "introduce は人を紹介する語で、「〜だと伝える」にはなりません。"
+        },
+        {
+          "t": "（このままでよい）",
+          "why": "introduce は人を紹介する語で、that 節は続きません。"
+        }
+      ],
+      "explain": "「〜だと伝える」は tell 人 that …。introduce は人を紹介するときの語です。",
+      "review": true
+    },
+    {
+      "id": "q10",
+      "label": "こう言うのが自然",
+      "scene": "地域",
+      "form": "fix",
+      "ask": "直すべき部分は？",
+      "stem": "Some neighbors [[talked to me to help]] when I was shoveling snow.",
+      "options": [
+        {
+          "t": "told me to help",
+          "why": "told me to help は「私に手伝えと言った」になります。"
+        },
+        {
+          "t": "talked me help",
+          "why": "to が抜けていて、語順も崩れています。"
+        },
+        {
+          "t": "said to help me",
+          "why": "say to help me では「手伝おうか」と申し出る意味になりません。"
+        },
+        {
+          "t": "offered to help me",
+          "ok": true
+        }
+      ],
+      "explain": "「手伝おうかと声をかける」は offer to help。",
+      "review": true
+    },
+    {
+      "id": "q11",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（店を出るとき、店員がドアを押さえてくれた）",
+      "options": [
+        {
+          "t": "The clerk held the door for me when I went out of the store.",
+          "ok": true
+        },
+        {
+          "t": "The clerk held me the door when I left the store.",
+          "why": "hold は「人＋物」の形を取れません。the door for me と言います。"
+        },
+        {
+          "t": "The clerk held the door to me when I went out.",
+          "why": "「〜のために」は to ではなく for です。"
+        },
+        {
+          "t": "The clerk opened the door of me when I went out from the store.",
+          "why": "of me では「私のために」になりません。out from も不自然です。"
+        }
+      ],
+      "explain": "ドアを押さえるのは hold the door for 人。出るのは go out of / leave。",
+      "review": true
+    },
+    {
+      "id": "q12",
+      "label": "こう言うのが自然",
+      "scene": "生活",
+      "form": "choose",
+      "ask": "正しい文は？",
+      "stem": "（この町で車を運転することに、まだ慣れている途中です）",
+      "options": [
+        {
+          "t": "I'm on the way to be accustomed to driving in this town.",
+          "why": "「慣れる途中」を on the way で言うのは不自然です。"
+        },
+        {
+          "t": "I'm still getting used to driving in this town.",
+          "ok": true
+        },
+        {
+          "t": "I'm still get used to drive in this town.",
+          "why": "be 動詞の後ろは getting、to のあとは driving と -ing にします。"
+        },
+        {
+          "t": "I'm getting used to drive in this town still.",
+          "why": "used to のあとは動詞の原形ではなく -ing 形です。"
+        }
+      ],
+      "explain": "「まだ慣れている途中」は I'm still getting used to … ＋ -ing。レッスンですぐ使えます。",
+      "review": true
+    }
+  ]
+}
